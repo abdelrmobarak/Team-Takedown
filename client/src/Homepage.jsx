@@ -20,13 +20,13 @@ function Homepage({showDisplay, showHost, showContestant, showHomepage}) {
   return (
     <>
     <h1>TEAM TAKEDOWN</h1>
-    <button class="Display" onClick={()=> onDisplayClick()}>
+    <button className="Display" onClick={()=> onDisplayClick()}>
       Join as Display
     </button>
-    <button class="Host" onClick={()=> onHostClick()}>
+    <button className="Host" onClick={()=> onHostClick()}>
       Join as Host
     </button>
-    <button class="Player" onClick={()=> onContestantClick()}>
+    <button className="Player" onClick={()=> onContestantClick()}>
       Join as Player
     </button>
     <footer>
