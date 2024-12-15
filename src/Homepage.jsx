@@ -1,21 +1,20 @@
 import React from 'react';
-import { useState } from 'react'
 import './App.css'
 
 function Homepage({showDisplay, showHost, showContestant, showHomepage}) {
   function onDisplayClick() {
-    showHomepage(false)
-    showDisplay(true)
+    showHomepage(false);
+    showDisplay(true);
   }
   
   function onHostClick() {
-    showHomepage(false)
-    showHost(true)
+    showHomepage(false);
+    showHost(true);
   }
 
   function onContestantClick() {
-    showHomepage(false)
-    showContestant(true)
+    showHomepage(false);
+    showContestant(true);
   }
 
   return (
@@ -25,7 +24,7 @@ function Homepage({showDisplay, showHost, showContestant, showHomepage}) {
       Join as Display
     </button>
     <button class="Host" onClick={()=> onHostClick()}>
-      Join as Hosts
+      Join as Host
     </button>
     <button class="Player" onClick={()=> onContestantClick()}>
       Join as Player
