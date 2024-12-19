@@ -1,7 +1,12 @@
 import React from 'react';
 import './App.css'
+import io from 'socket.io-client'
 
-function Homepage({showDisplay, showHost, showContestant, showHomepage}) {
+export const socket = io.connect("http://localhost:3001")
+
+
+function Homepage({showDisplay, showHost, showContestant, showHomepage, roomId, setRoomID}) {
+
   function onDisplayClick() {
     showHomepage(false);
     showDisplay(true);
