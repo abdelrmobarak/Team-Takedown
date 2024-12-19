@@ -1,16 +1,16 @@
 import React from 'react';
 
-function HostPageTwo({showHomepage, showHostTwo, showAdminPage}) {
+function HostPageTwo(props) {
     function onHomepageClick() {
-        showHomepage(true);
-        showHostTwo(false);
-    }
+        props.settShowHomepage(true);
+        props.setShowHostTwo(false);
+ }
 
     function onStartClick(e) {
         e.preventDefault()
-        showHostTwo(false);
-        showAdminPage(true);
-    }
+        props.settShowHostTwo(false);
+        props.setShowAdminPage(true);
+ }
 
     return(
         <>

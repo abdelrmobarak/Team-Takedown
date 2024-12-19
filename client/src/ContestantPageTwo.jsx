@@ -1,27 +1,25 @@
 import React, { useState } from 'react';
 import { socket } from './Homepage';
 
-function ContestantTwo({ showHomepage, showContestantTwo, roomID, setRoomID, showContestantThree }) {
-    const [username, setUsername] = useState('');
-    const [team, setTeam] = useState('');
+function ContestantTwo(props) {
 
     function onHomepageClick(e) {
         e.preventDefault();
-        showHomepage(true);
-        showContestantTwo(false);
+        props.setShowHomepage(true);
+        props.setShowContestantTwo(false);
     }
 
     function contestantThree() {
-        showContestantTwo(false);
-        showContestantThree(true);
+        props.setShowContestantTwo(false);
+        props.setShowContestantThree(true);
     }
 
     function onContestantJoinSubmit(e) {
         e.preventDefault();
-        if (username && team) {
+        if (props.username && props.team) {
             contestantThree();
-            socket.emit('join-room', roomID);
-            console.log(`Attempting to join room: ${roomID}, Username: ${username}, Team: ${team}`); // Debugging code
+            socket.emit('join-room', props.roomID);
+            console.log(`Attempting to join room: ${props.roomID}, Username: ${props.username}, Team: ${props.team}`); // Debugging code
         } else {
             alert('Please enter your name and select a team before proceeding.');
         }
@@ -35,8 +33,8 @@ function ContestantTwo({ showHomepage, showContestantTwo, roomID, setRoomID, sho
                     type="text"
                     id="username"
                     placeholder="NAME"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    value={props.username}
+                    onChange={(e) => props.setUsername(e.target.value)}
                 />
 
                 <div>
@@ -44,15 +42,15 @@ function ContestantTwo({ showHomepage, showContestantTwo, roomID, setRoomID, sho
                         type="button"
                         id="teamone"
                         onClick={() => setTeam('Team One')}
-                        style={{ backgroundColor: team === 'Team One' ? 'lightblue' : '' }}
+                        style={{ backgroundColor: props.team === 'Team One' ? 'lightblue' : '' }}
                     >
                         Team One
                     </button>
                     <button
                         type="button"
                         id="teamtwo"
-                        onClick={() => setTeam('Team Two')}
-                        style={{ backgroundColor: team === 'Team Two' ? 'lightblue' : '' }}
+                        onClick={() => props.setTeam('Team Two')}
+                        style={{ backgroundColor: props.team === 'Team Two' ? 'lightblue' : '' }}
                     >
                         Team Two
                     </button>

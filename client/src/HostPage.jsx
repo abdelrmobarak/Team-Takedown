@@ -34,6 +34,9 @@ function HostPage(pros) {
         if (username && usernametwo) {
             e.preventDefault()
         socket.emit('join-room', generateGameCode())
+        socket.on("room-joined", (roomid)=>{
+            
+        })
         pros.setShowHost(false);
             pros.setShowHostTwo(true);
         } else {

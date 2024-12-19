@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DisplayPageTwo() {
+function DisplayPageTwo(props) {
     return(
         <h1>Waiting For Host...</h1>
     )

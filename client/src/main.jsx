@@ -27,6 +27,8 @@ function Index() {
   const [showDisplayPageTwo, setShowDisplayPageTwo] = useState(false)
   const [showAdminPage, setShowAdminPage] = useState(false)
   const [showPlayerPage, setShowPlayerPage] = useState(false)
+  const [username, setUsername] = useState('');
+  const [team, setTeam] = useState('');
   
   const props = {
     setShowDisplay,
@@ -36,33 +38,29 @@ function Index() {
     setShowContestantTwo,
     setShowHostTwo,
     roomID,
-    setRoomID
+    setRoomID,
+    setShowAdminPage,
+    setShowDisplayPageTwo,
+    setShowContestantThree,
+    setUsername,
+    setTeam,
+    team,
+    username,
+    setShowPlayerPage
   }
 
 
   if (showHomepage) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Home"
     return(
-      <Homepage 
-      showDisplay={setShowDisplay}
-      showHost={setShowHost}
-      showContestant={setShowContestant}
-      showHomepage = {setShowHomepage}
-      showContestantTwo = {setShowContestantTwo}
-      showHostTwo = {setShowHostTwo}
-      />
+      <Homepage {...props}/>
     );
   }
 
   if (showContestant) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Player"
     return(
-      <ContestantPage 
-      showHomepage = {setShowHomepage}
-      showContestant = {setShowContestant}
-      showContestantTwo = {setShowContestantTwo}
-      roomInfo = {roomID}
-      setter = {setRoomID} />
+      <ContestantPage {...props} />
     );
   }
 
@@ -78,12 +76,7 @@ function Index() {
   if (showDisplay) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Display"
     return(
-      <DisplayPage
-      showHomepage = {setShowHomepage}
-      showDisplay = {setShowDisplay} 
-      showDisplayPageTwo = {setShowDisplayPageTwo}
-      roomID = {roomID}
-      setRoomID = {setRoomID}/>
+      <DisplayPage {...props}/>
     )
   }
 
@@ -91,54 +84,34 @@ function Index() {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Player"
     console.log("new rrom id: ",roomID) // Debugging
     return(
-    <ContestantTwo
-    showHomepage = {setShowHomepage}
-    showContestantTwo = {setShowContestantTwo}
-    roomID = {roomID}
-    setRoomID = {setRoomID}
-    showContestantThree = {setShowContestantThree}/>
+    <ContestantTwo {...props}/>
     )
   }
 
   if (showHostTwo) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Host"
     return(
-      <HostPageTwo
-      showHomepage = {setShowHomepage}
-      showHostTwo = {setShowHostTwo}
-      roomId = {roomID}
-      setRoomID = {setRoomID}
-      showAdminPage = {setShowAdminPage}
-      />
+      <HostPageTwo {...props} />
     )
   }
 
   if (showContestantThree) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Player"
     return (
-      <ContestantThree
-      showHomepage = {setShowHomepage}
-      showContestantThree = {setShowContestantThree}
-      roomId = {roomID}
-      setRoomId = {setRoomID}
-      />
+      <ContestantThree {...props} />
     )
   }
   
   if (showDisplayPageTwo) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Display"
     return(
-    <DisplayPageTwo
-    roomId = {roomID}
-    setRoomId = {setRoomID}/>)
+    <DisplayPageTwo {...props}/>)
     }
   
   if (showAdminPage) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Admin Panel"
     return(
-      <AdminPage
-      roomId = {roomID}
-      setRoomId = {setRoomID}/>)
+      <AdminPage {...props}/>)
   }
 
   if (showPlayerPage) {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ContestantThree() {
+function ContestantThree(props) {
     return(
         <h1>Waiting For Host...</h1>
     )

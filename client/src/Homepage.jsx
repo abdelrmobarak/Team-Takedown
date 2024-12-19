@@ -5,21 +5,21 @@ import io from 'socket.io-client'
 export const socket = io.connect("http://localhost:3001")
 
 
-function Homepage({showDisplay, showHost, showContestant, showHomepage, roomId, setRoomID}) {
+function Homepage(props) {
 
   function onDisplayClick() {
-    showHomepage(false);
-    showDisplay(true);
+    props.setShowHomepage(false);
+    props.setShowDisplay(true);
   }
   
   function onHostClick() {
-    showHomepage(false);
-    showHost(true);
+    props.setShowHomepage(false);
+    props.setShowHost(true);
   }
 
   function onContestantClick() {
-    showHomepage(false);
-    showContestant(true);
+    props.setShowHomepage(false);
+    props.setShowContestant(true);
   }
 
   return (

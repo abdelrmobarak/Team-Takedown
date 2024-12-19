@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 
-function DisplayPage({ showHomepage, showDisplay, showDisplayPageTwo }) {
+function DisplayPage(props) {
     const [gameCode, setGameCode] = useState('');
 
     function onHomepageClick() {
-        showHomepage(true);
-        showDisplay(false);
+        props.setShowHomepage(true);
+        props.setShowDisplay(false);
     }
 
     function onDisplayTwoClick(e) {
         e.preventDefault(); // Prevent form submission
         if (gameCode) {
-            showHomepage(false);
-            showDisplay(false);
-            showDisplayPageTwo(true);
+            props.setShowHomepage(false);
+            props.setShowDisplay(false);
+            props.setShowDisplayPageTwo(true);
         } else {
             alert("Please enter a game code before proceeding.");
         }

@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 
-function ContestantPage({ showHomepage, showContestant, showContestantTwo, roomInfo, setter }) {
+function ContestantPage(props) {
 
     const [gameCode, setGameCode] = useState('')
 
     function onHomepageClick() {
-        showHomepage(true);
-        showContestant(false);
+        props.setShowHomepage(true);
+        props.setShowContestant(false);
     }
 
     function onJoinClick(e) {
         if (gameCode) {
             e.preventDefault()
-            showContestant(false)
-            showContestantTwo(true)
+            props.setShowContestant(false)
+            props.setShowContestantTwo(true)
             console.log(gameCode) // debugging
-            setter(gameCode)}
+            props.setRoomID(gameCode)}
         else {
             alert("Enter a game code!")
         }
