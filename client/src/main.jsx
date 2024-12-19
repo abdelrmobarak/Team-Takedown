@@ -11,12 +11,18 @@ import HostPageTwo from './HostPageTwo.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Index() {
+  // state funbction defentions, passed on to child components
   const [showDisplay, setShowDisplay] = useState(false)
   const [showContestant, setShowContestant] = useState(false)
   const [showHost, setShowHost] = useState(false)
   const [showHomepage, setShowHomepage] = useState(true)
   const [showContestantTwo, setShowContestantTwo] = useState(false)
   const [showHostTwo, setShowHostTwo] = useState(false)
+  const [roomID, setRoomID] = useState("")
+
+  const props ={
+    s
+  }
 
   if (showHomepage) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Home"
@@ -38,7 +44,9 @@ function Index() {
       <ContestantPage 
       showHomepage = {setShowHomepage}
       showContestant = {setShowContestant}
-      showContestantTwo = {setShowContestantTwo} />
+      showContestantTwo = {setShowContestantTwo}
+      roomInfo = {roomID}
+      setter = {setRoomID} />
     );
   }
 
@@ -48,7 +56,9 @@ function Index() {
       <HostPage
       showHomepage = {setShowHomepage}
       showHost = {setShowHost} 
-      showHostTwo = {setShowHostTwo}/>
+      showHostTwo = {setShowHostTwo}
+      roomID = {roomID}
+      setRoomID = {setRoomID}/>
     );
   }
 
@@ -57,16 +67,21 @@ function Index() {
     return(
       <DisplayPage
       showHomepage = {setShowHomepage}
-      showDisplay = {setShowDisplay} />
+      showDisplay = {setShowDisplay} 
+      roomID = {roomID}
+      setRoomID = {setRoomID}/>
     )
   }
 
   if (showContestantTwo) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Player"
+    console.log("new rrom id: ",roomID)
     return(
     <ContestantTwo
     showHomepage = {setShowHomepage}
-    showContestantTwo = {setShowContestantTwo} />
+    showContestantTwo = {setShowContestantTwo}
+    roomID = {roomID}
+    setRoomID = {setRoomID}/>
     )
   }
 
@@ -75,7 +90,10 @@ function Index() {
     return(
       <HostPageTwo
       showHomepage = {setShowHomepage}
-      showHostTwo = {setShowHostTwo}/>
+      showHostTwo = {setShowHostTwo}
+      roomId = {roomID}
+      setRoomID = {setRoomID}
+      />
     )
   }
 }
