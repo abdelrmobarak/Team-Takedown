@@ -9,6 +9,7 @@ import ContestantTwo from './ContestantPageTwo.jsx'
 import HostPageTwo from './HostPageTwo.jsx'
 import ContestantThree from './ContestantThree.jsx';
 import DisplayPageTwo from './DisplayPageTwo.jsx'
+import AdminPage from './AdminPage.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,8 +23,8 @@ function Index() {
   const [showHostTwo, setShowHostTwo] = useState(false)
   const [showContestantThree, setShowContestantThree] = useState(false)
   const [roomID, setRoomID] = useState("")
-
   const [showDisplayPageTwo, setShowDisplayPageTwo] = useState(false)
+  const [showAdminPage, setShowAdminPage] = useState(false)
   
   const props = {
     setShowDisplay,
@@ -105,6 +106,7 @@ function Index() {
       showHostTwo = {setShowHostTwo}
       roomId = {roomID}
       setRoomID = {setRoomID}
+      showAdminPage = {setShowAdminPage}
       />
     )
   }
@@ -128,6 +130,13 @@ function Index() {
     roomId = {roomID}
     setRoomId = {setRoomID}/>)
     }
+  
+  if (showAdminPage)
+    document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Admin Panel"
+    return(
+      <AdminPage
+      roomId = {roomID}
+      setRoomId = {setRoomID}/>)
   }
 
 root.render(
