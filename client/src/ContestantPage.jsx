@@ -3,17 +3,22 @@ import React, { useState } from 'react';
 function ContestantPage({ showHomepage, showContestant, showContestantTwo, roomInfo, setter }) {
 
     const [gameCode, setGameCode] = useState('')
+
     function onHomepageClick() {
         showHomepage(true);
         showContestant(false);
     }
 
     function onJoinClick(e) {
-        e.preventDefault()
-        showContestant(false)
-        showContestantTwo(true)
-        console.log(gameCode) // debugging
-        setter(gameCode)
+        if (gameCode) {
+            e.preventDefault()
+            showContestant(false)
+            showContestantTwo(true)
+            console.log(gameCode) // debugging
+            setter(gameCode)}
+        else {
+            alert("Enter a game code!")
+        }
     }
 
     return(
@@ -26,7 +31,7 @@ function ContestantPage({ showHomepage, showContestant, showContestantTwo, roomI
                 
                 <button type="submit" onClick={(e)=> onJoinClick(e) }>Join Game</button>
             </form>
-            <button onClick={()=>onHomepageClick}>BACK</button>
+            <button onClick={()=>onHomepageClick()}>BACK</button>
         </>
     );
 }

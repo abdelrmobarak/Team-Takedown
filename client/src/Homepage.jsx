@@ -35,7 +35,7 @@ function Homepage({showDisplay, showHost, showContestant, showHomepage, roomId, 
       Join as Player
     </button>
     <footer>
-      <p>By: Abdel-Rahman Mobarak & Augustine Osezua</p>
+      <p>With ❤️ By Abdel-Rahman Mobarak & Augustine Osezua</p>
     </footer>
     </>
   );
