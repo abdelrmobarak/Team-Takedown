@@ -23,7 +23,10 @@ io.on('connection', socket => {
         console.log(roomID)
         socket.join(roomID)
         console.log(`User with id ${socket.id} has joined ${roomID}`)
+        socket.emit('room_joined')
     })
+
+    
 })
 
 httpServer.listen(port, ()=> {

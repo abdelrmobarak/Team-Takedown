@@ -1,19 +1,41 @@
 import React, { useState } from 'react';
+import { socket } from './Homepage'
 
-function HostPage({ showHomepage, showHost, showHostTwo }) {
+
+function HostPage(pros) {
+
     const [username, setUsername] = useState('');
     const [usernametwo, setUsernametwo] = useState('');
 
-    function onHomepageClick() {
-        showHomepage(true);
-        showHost(false);
+    console.log(pros)
+    
+    function onHomepageClick(e) {
+        pros.setShowHomepage(true);
+        e.preventDefault()
+        pros.setShowHost(false);
+    }
+
+        // Function to generate a random game code
+    function generateGameCode() {
+        // Generate three random uppercase letters
+        const letters = Array.from({ length: 3 }, () => 
+            String.fromCharCode(65 + Math.floor(Math.random() * 26)) // ASCII codes for A-Z
+        ).join('');
+
+        // Generate two random digits
+        const numbers = Math.floor(10 + Math.random() * 90); // Ensures two digits
+
+        // Combine letters and numbers into a game code
+        return `${letters}${numbers}`;
     }
 
     function onCreateClick(e) {
         e.preventDefault(); // Prevent form submission
         if (username && usernametwo) {
-            showHost(false);
-            showHostTwo(true);
+            e.preventDefault()
+        socket.emit('join-room', generateGameCode())
+        pros.setShowHost(false);
+            pros.setShowHostTwo(true);
         } else {
             alert('Please enter your name before proceeding.');
         }
@@ -22,7 +44,7 @@ function HostPage({ showHomepage, showHost, showHostTwo }) {
     return (
         <>
             <h1>Enter Two Team Names Below</h1>
-            <form>
+            <form onSubmit={(e)=> onCreateClick(e)}>
                 <input
                     type="text"
                     name="teamone"
@@ -36,9 +58,9 @@ function HostPage({ showHomepage, showHost, showHostTwo }) {
                 onChange={(e) => setUsernametwo(e.target.value)} 
 
                 required />
-                <button onClick={onCreateClick}>Create Game</button>
+                <button type = "submit">Create Game</button>
             </form>
-            <button onClick={onHomepageClick}>BACK</button>
+            <button onClick={(e)=> onHomepageClick(e)}>BACK</button>
         </>
     );
 }

@@ -22,7 +22,20 @@ function Index() {
   const [showHostTwo, setShowHostTwo] = useState(false)
   const [showContestantThree, setShowContestantThree] = useState(false)
   const [roomID, setRoomID] = useState("")
+
   const [showDisplayPageTwo, setShowDisplayPageTwo] = useState(false)
+  
+  const props = {
+    setShowDisplay,
+    setShowContestant,
+    setShowHost,
+    setShowHomepage,
+    setShowContestantTwo,
+    setShowHostTwo,
+    roomID,
+    setRoomID
+  }
+
 
   if (showHomepage) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Home"
@@ -53,13 +66,10 @@ function Index() {
   if (showHost) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Host"
     return(
-      <HostPage
-      showHomepage = {setShowHomepage}
-      showHost = {setShowHost} 
-      showHostTwo = {setShowHostTwo}
-      roomID = {roomID}
-      setRoomID = {setRoomID}/>
-    );
+
+      <HostPage {...props}/>
+      
+    )
   }
 
   if (showDisplay) {
