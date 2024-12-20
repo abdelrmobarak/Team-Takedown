@@ -29,6 +29,10 @@ io.on('connection', socket => {
         io.to(gameCode).emit('game-start', gameCode)
     })
 
+    socket.on('give-points-server', (gameCode, team, points) =>{
+        io.to(gameCode).emit('give-points', team, points)
+    })
+
     
 })
 
