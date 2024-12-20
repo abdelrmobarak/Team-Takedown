@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { socket } from './Homepage'
 
 function ContestantThree(props) {
 
     var teamMembers;
-    useState(()=>{ 
+    useEffect(()=>{ 
         socket.on('game-start',(gameCode)=>{
             if (gameCode == props.roomID){
                 props.setShowContestantThree(false)

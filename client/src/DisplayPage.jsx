@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './DisplayPage.css';
+import {socket} from './Homepage';
 
 function DisplayPage(props) {
     const [gameCode, setGameCode] = useState('');
@@ -12,6 +13,8 @@ function DisplayPage(props) {
     function onDisplayTwoClick(e) {
         e.preventDefault(); // Prevent form submission
         if (gameCode) {
+            socket.emit('join-room', gameCode, 'display', 'display');
+            props.setRoomID(gameCode);
             props.setShowHomepage(false);
             props.setShowDisplay(false);
             props.setShowDisplayPageTwo(true);

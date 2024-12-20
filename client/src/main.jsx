@@ -11,6 +11,8 @@ import DisplayPageTwo from './DisplayPageTwo.jsx'
 import AdminPage from './AdminPage.jsx';
 import PlayerPage from './PlayerPage.jsx';
 import DisplayScreen from './DisplayScreen.jsx'
+import questions from './Questions.json'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,6 +35,8 @@ function Index() {
   const [gameCode, setGameCode] = useState('')  
   const [teamRed, setTeamRed] = useState([])
   const [teamBlue, setTeamBlue] = useState([])
+  
+ 
   
   const props = {
     setShowDisplay,
@@ -57,7 +61,8 @@ function Index() {
     teamRed,
     teamBlue,
     setTeamRed,
-    setTeamBlue
+    setTeamBlue,
+    questions
   }
 
 
