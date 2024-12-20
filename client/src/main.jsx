@@ -15,7 +15,7 @@ import PlayerPage from './PlayerPage.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Index() {
-  // state funbction defentions, passed on to child components
+  // state function definitons, passed on to child components - inefficent due to time constraints
   const [showDisplay, setShowDisplay] = useState(false)
   const [showContestant, setShowContestant] = useState(false)
   const [showHost, setShowHost] = useState(false)
@@ -28,7 +28,8 @@ function Index() {
   const [showAdminPage, setShowAdminPage] = useState(false)
   const [showPlayerPage, setShowPlayerPage] = useState(false)
   const [username, setUsername] = useState('');
-  const [team, setTeam] = useState('');
+  const [team, setTeam] = useState('')
+  const [gameCode, setGameCode] = useState('')
   
   const props = {
     setShowDisplay,
@@ -46,7 +47,9 @@ function Index() {
     setTeam,
     team,
     username,
-    setShowPlayerPage
+    setShowPlayerPage,
+    setGameCode,
+    gameCode
   }
 
 
@@ -117,9 +120,7 @@ function Index() {
   if (showPlayerPage) {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Player"
     return (
-      <PlayerPage
-      roomId = {roomID}
-      setRoomId = {setRoomID}/>)
+      <PlayerPage {...props}/>)
   }
 }
 

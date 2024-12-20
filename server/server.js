@@ -19,11 +19,10 @@ io.on('connection', socket => {
         io.emit(data)
     })
 
-    socket.on("join-room", (roomID) =>{
-        console.log(roomID)
+    socket.on("join-room", roomID =>{
         socket.join(roomID)
         console.log(`User with id ${socket.id} has joined ${roomID}`)
-        socket.emit('room-joined')
+        io.emit('room-joined', roomID, socket.id)
     })
 
     

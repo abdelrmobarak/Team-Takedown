@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { socket } from './Homepage'
 
 
-function HostPage(pros) {
+function HostPage(props) {
 
     const [username, setUsername] = useState('');
     const [usernametwo, setUsernametwo] = useState('');
-
-    console.log(pros)
     
     function onHomepageClick(e) {
-        pros.setShowHomepage(true);
+        props.setShowHomepage(true);
         e.preventDefault()
-        pros.setShowHost(false);
+        props.setShowHost(false);
     }
 
         // Function to generate a random game code
@@ -29,16 +27,24 @@ function HostPage(pros) {
         return `${letters}${numbers}`;
     }
 
+
+    
+
     function onCreateClick(e) {
         e.preventDefault(); // Prevent form submission
+
+        const gameCode = generateGameCode()
+        props.setGameCode(gameCode) // bypassing async nature of react
+
         if (username && usernametwo) {
-            e.preventDefault()
-        socket.emit('join-room', generateGameCode())
-        socket.on("room-joined", (roomid)=>{
-            
+        socket.emit('join-room', gameCode)
+
+        socket.on("room-joined", (roomid, id)=>{
+            console.log(`${id} has connected to ${roomid}`)
         })
-        pros.setShowHost(false);
-            pros.setShowHostTwo(true);
+
+        props.setShowHost(false);
+        props.setShowHostTwo(true);
         } else {
             alert('Please enter your name before proceeding.');
         }

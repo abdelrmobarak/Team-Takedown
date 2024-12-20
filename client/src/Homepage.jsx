@@ -14,7 +14,7 @@ function Homepage(props) {
   
   function onHostClick() {
     props.setShowHomepage(false);
-    props.setShowHost(true);
+    props.setShowHostTwo(true);
   }
 
   function onContestantClick() {
