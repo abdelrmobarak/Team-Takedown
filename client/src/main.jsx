@@ -11,6 +11,7 @@ import ContestantThree from './ContestantThree.jsx';
 import DisplayPageTwo from './DisplayPageTwo.jsx'
 import AdminPage from './AdminPage.jsx';
 import PlayerPage from './PlayerPage.jsx';
+import DisplayScreen from './DisplayScreen.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -27,6 +28,7 @@ function Index() {
   const [showDisplayPageTwo, setShowDisplayPageTwo] = useState(false)
   const [showAdminPage, setShowAdminPage] = useState(false)
   const [showPlayerPage, setShowPlayerPage] = useState(false)
+  const [showDisplayScreen, setShowDisplayScreen] = useState(false)
   const [username, setUsername] = useState('');
   const [team, setTeam] = useState('')
   const [gameCode, setGameCode] = useState('')
@@ -48,6 +50,7 @@ function Index() {
     team,
     username,
     setShowPlayerPage,
+    setShowDisplayScreen,
     setGameCode,
     gameCode
   }
@@ -121,6 +124,12 @@ function Index() {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Player"
     return (
       <PlayerPage {...props}/>)
+  }
+
+  if (showDisplayScreen) {
+    document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Display"
+    return (
+      <DisplayScreen {...props}/>)
   }
 }
 
