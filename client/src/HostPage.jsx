@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { socket } from './Homepage'
 
-
 function HostPage(props) {
 
     const [username, setUsername] = useState('');

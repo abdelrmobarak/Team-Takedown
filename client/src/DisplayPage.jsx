@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './DisplayPage.css'
 
 function DisplayPage(props) {
     const [gameCode, setGameCode] = useState('');
@@ -20,7 +21,7 @@ function DisplayPage(props) {
     }
 
     return(
-        <>  
+        <div className="displaypage">  
             <h1>Enter a Game Code Below</h1>
             <form>
                 <input
@@ -31,10 +32,10 @@ function DisplayPage(props) {
                     value={gameCode} 
                     onChange={(e) => setGameCode(e.target.value)}
                 />
-                <button type="submit" onClick={onDisplayTwoClick}>Join Game</button>
+                <button type="submit" onClick={onDisplayTwoClick}>JOIN GAME</button>
             </form>
-            <button onClick={onHomepageClick}>BACK</button>
-        </>
+            <button id="back" onClick={onHomepageClick}>BACK</button>
+        </div>
     );
 }
 

@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.homepage body {
+    background: #19E679;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+  
+.homepage h1 {
+    font-family: 'Lilita One', serif;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+  
+.homepage footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+  
+.homepage button {
+    font-family: 'Lilita One', serif;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #047721;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.homepage button:hover {
+    background-color: #ff0000;
+}
+  
+.homepage .Display, 
+.homepage .Host, 
+.homepage .Player {
+    position: static;
+}
+  
+.homepage footer p {
+    margin: 0;
+}
+  
+/* Layout adjustments */
+.homepage .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+  
+.homepage .logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+}
+  
+.homepage .logo img {
+    max-width: 200px;
+    max-height: 200px;
+}

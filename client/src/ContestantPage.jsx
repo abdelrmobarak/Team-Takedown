@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContestantPage.css';
 
 function ContestantPage(props) {
 
@@ -22,7 +23,7 @@ function ContestantPage(props) {
     }
 
     return(
-        <>
+        <div className="contestantpage">
             <h1>Enter a Game Code Below</h1>
             <form onSubmit={(e)=> onJoinClick(e)}>
 
@@ -31,8 +32,8 @@ function ContestantPage(props) {
                 
                 <button type="submit" onClick={(e)=> onJoinClick(e) }>Join Game</button>
             </form>
-            <button onClick={()=>onHomepageClick()}>BACK</button>
-        </>
+            <button id='back' onClick={()=>onHomepageClick()}>BACK</button>
+        </div>
     );
 }
 

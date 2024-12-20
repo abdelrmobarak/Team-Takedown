@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'
+import './Homepage.css';
 import io from 'socket.io-client'
 
 export const socket = io.connect("http://localhost:3001")
@@ -23,7 +23,7 @@ function Homepage(props) {
   }
 
   return (
-    <>
+    <div className='homepage'>
     <h1>TEAM TAKEDOWN</h1>
     <button className="Display" onClick={()=> onDisplayClick()}>
       Join as Display
@@ -37,7 +37,7 @@ function Homepage(props) {
     <footer>
       <p>With ❤️ By Abdel-Rahman Mobarak & Augustine Osezua</p>
     </footer>
-    </>
+    </div>
   );
 }
 
