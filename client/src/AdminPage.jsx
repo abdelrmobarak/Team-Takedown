@@ -36,6 +36,7 @@ function AdminPage(props) {
 
     function pointsUpdate(e) {
         e.preventDefault()
+        socket.emit('show-answer-server', props.gameCode, questionNumber, idToPoints(e.target.id))
         setPoints(points + pointsForQuestions[idToPoints(e.target.id)-1])
     }
 
