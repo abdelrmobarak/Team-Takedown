@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { socket } from './Homepage';
+import './ContestantPageTwo.css'
 
 
 function ContestantTwo(props) {
@@ -32,7 +33,7 @@ function ContestantTwo(props) {
     }
 
     return (
-        <>
+        <div className='contestantpagetwo'>
             <h1>Enter Your Name and Select Your Team</h1>
             <form onSubmit={(e) => onContestantJoinSubmit(e)}>
                 <input
@@ -43,28 +44,26 @@ function ContestantTwo(props) {
                     onChange={(e) => setUsername(e.target.value)}
                 />
 
-                <div>
+                <div className="buttons-container">
                     <button
                         type="button"
                         id="teamone"
-                        onClick={() => setTeam('red')}
-                        style={{ backgroundColor: team === 'red' ? 'red' : '' }}
-                    >
+                        onClick={() => setTeam('red')}    
+                        style={{backgroundColor : team==='red' ? 'red' : 'black'}}                                  >
                         Team One
                     </button>
                     <button
                         type="button"
                         id="teamtwo"
-                        onClick={() => setTeam('blue')}
-                        style={{ backgroundColor: team === 'blue' ? 'blue' : '' }}
-                    >
+                        onClick={() => setTeam('blue')}  
+                        style={{backgroundColor : team==='blue' ? 'blue' : 'black'}}                  >
                         Team Two
                     </button>
                 </div>
                 <button type="submit" id="join">JOIN</button>
             </form>
-            <button onClick={(e) => onHomepageClick(e)}>BACK</button>
-        </>
+            <button id="back" onClick={(e) => onHomepageClick(e)}>BACK</button>
+        </div>
     );
 }
 

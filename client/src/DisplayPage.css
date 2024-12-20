@@ -108,3 +108,9 @@ html, body {
 .displaypage button:first-of-type:active {
   background-color: #397d3e;
 }
+
+@media only screen and (max-width: 500px) {
+  .displaypage {
+    transform: translateY(-100px); /* Adjust value as needed */
+  }
+}

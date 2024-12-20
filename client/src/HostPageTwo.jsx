@@ -46,7 +46,6 @@ function HostPageTwo(props) {
     }, []);
 
     return (
-    return (
         <div className='hostpage'>
             <h1>GAME CODE: <span className='gameCode'>{props.gameCode}</span></h1>
             <div className='teams-container'>
