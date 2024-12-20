@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import {socket} from './Homepage'
+import './Waiting.css'
 
 function DisplayPageTwo(props) {
 
@@ -15,7 +16,7 @@ function DisplayPageTwo(props) {
         },[])
 
     return(
-        <h1>Waiting For Host...</h1>
+        <h1 className='waiting'>Waiting For Host...</h1>
     )
 }
 
