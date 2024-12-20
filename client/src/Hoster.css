@@ -1,129 +1,79 @@
 html, body {
-    height: 100%;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-  }
-  
-  .hostpage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .hostpage h1 {
-    font-family: 'Lilita One', serif;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .hostpage form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    height: 100%;
     width: 100%;
-    max-width: 400px;
+    background-color: #19E679;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
   }
-  
-  .hostpage input {
-    padding: 10px;
-    font-size: 1rem;
-    width: 80%;
-    max-width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    outline: none;
-  }
-  
-  .hostpage input:focus {
-    border-color: #047721;
-  }
-  
-  .hostpage button {
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    background-color: #047721;
-    color: white;
+
+.hostpage h1 {
+    font-size: 3em;
+    font-family: "Lilita One", Arial, Helvetica, sans-serif;
+    color: #116337;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.gameCode {
+    color: #efeded;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hostpage #start {
+    background-color: #116337;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    color: #efeded;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
     border: none;
     border-radius: 5px;
+    padding: 10px 15px;
+    margin: auto;
+    margin-top: 11em;
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: 80%;
-    max-width: 300px;
-  }
-  
-  .hostpage button:hover {
-    background-color: #054b08;
-  }
-  
-  .hostpage button:active {
-    background-color: #035d06;
-  }
-  
-  .hostpage button[type="submit"] {
-    margin-top: 20px;
-  }
-  
-  .hostpage button[type="button"] {
-    margin-top: 20px;
-    background-color: #ccc;
-    color: black;
-  }
-  
-  .hostpage button[type="button"]:hover {
-    background-color: #aaa;
-  }
-  
-  /* New Styles for Team Names Display */
-  .team-container {
+}
+
+.teams-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    margin-top: 30px;
-  }
-  
-  .team {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    align-items: center;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .team h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .player-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-  }
-  
-  .player {
-    font-size: 1.2rem;
-    color: #333;
-  }
-  
-  .player.joined {
-    color: #047721; /* Color for joined players */
-  }
-  
+}
+
+.red, .blue {
+    color: #000000;
+    font-family: "Lilita One", sans-serif;
+    text-align: center;
+    font-size: 1em;
+}
+
+.red {
+    margin-left: 3em;
+}
+
+.blue {
+    text-align: center; 
+    margin-right: 3em;
+}
+
+.blueblue {
+    color: blue;
+}
+
+.redred {
+    color: red
+}
+
+#back {
+    font-weight: bold;
+}
+
