@@ -14,6 +14,7 @@ function HostPageTwo(props) {
         e.preventDefault()
         props.setShowHostTwo(false);
         props.setShowAdminPage(true)
+        socket.emit('game-start-server', props.gameCode)
  }
 
     function generateGameCode() {

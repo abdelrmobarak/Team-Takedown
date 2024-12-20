@@ -25,6 +25,10 @@ io.on('connection', socket => {
         io.emit('room-joined', roomID, socket.id, name, team)
     })
 
+    socket.on('game-start-server', (gameCode) =>{
+        io.to(gameCode).emit('game-start', gameCode)
+    })
+
     
 })
 
