@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import Homepage from './Homepage.jsx'
 import { useState } from 'react';
 import ContestantPage from './ContestantPage.jsx';
-import HostPage from './HostPage.jsx'
 import DisplayPage from './DisplayPage.jsx'
 import ContestantTwo from './ContestantPageTwo.jsx'
 import HostPageTwo from './HostPageTwo.jsx'

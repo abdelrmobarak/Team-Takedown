@@ -75,7 +75,7 @@ html, body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#back {
+/* #back {
   position: absolute; bottom: 0; left: 0;
   margin: 5px;
   padding: 22px 30px;
@@ -86,7 +86,7 @@ html, body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-}
+} */
 
 .displaypage button:hover {
   background-color: #e03a3a;

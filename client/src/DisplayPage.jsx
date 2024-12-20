@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './DisplayPage.css'
+import './DisplayPage.css';
 
 function DisplayPage(props) {
     const [gameCode, setGameCode] = useState('');

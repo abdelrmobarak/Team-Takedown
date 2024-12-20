@@ -1,5 +1,6 @@
 import React, { useEffect} from 'react';
 import { socket } from './Homepage'
+import './Hoster.css'
 
 function HostPageTwo(props) {
 
@@ -49,7 +50,7 @@ function HostPageTwo(props) {
     }, [])
 
     return(
-        <>
+        <div className='hostpage'>
             <h1>GAME CODE: {props.gameCode}</h1> {/*Find a way to put updated game code here*/}
             <h2>TEAM RED</h2> {/*Find a way to put updated team name here*/}
             {props.teamRed.map((name, index) => {
@@ -61,7 +62,7 @@ function HostPageTwo(props) {
             })}
             <button id="back" onClick={()=> onHomepageClick()}>BACK</button>
             <button id="start" onClick={onStartClick}>START GAME</button>
-        </>
+        </div>
     )
 }
 
