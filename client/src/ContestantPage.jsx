@@ -30,7 +30,7 @@ function ContestantPage(props) {
                 <input type="text" name="gamecode" placeholder="CODE" required
                 onChange={(e)=>setGameCode(e.target.value)}></input>
                 
-                <button type="submit" onClick={(e)=> onJoinClick(e) }>Join Game</button>
+                <button type="submit" onClick={(e)=> onJoinClick(e) }>JOIN GAME</button>
             </form>
             <button id='back' onClick={()=>onHomepageClick()}>BACK</button>
         </div>
