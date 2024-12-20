@@ -1,4 +1,5 @@
 import React from 'react'
+import { socket } from './Homepage'
 
 function ContestantThree(props) {
     return(

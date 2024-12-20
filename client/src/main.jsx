@@ -31,7 +31,9 @@ function Index() {
   const [showDisplayScreen, setShowDisplayScreen] = useState(false)
   const [username, setUsername] = useState('');
   const [team, setTeam] = useState('')
-  const [gameCode, setGameCode] = useState('')
+  const [gameCode, setGameCode] = useState('')  
+  const [teamRed, setTeamRed] = useState([])
+  const [teamBlue, setTeamBlue] = useState([])
   
   const props = {
     setShowDisplay,
@@ -52,7 +54,11 @@ function Index() {
     setShowPlayerPage,
     setShowDisplayScreen,
     setGameCode,
-    gameCode
+    gameCode,
+    teamRed,
+    teamBlue,
+    setTeamRed,
+    setTeamBlue
   }
 
 

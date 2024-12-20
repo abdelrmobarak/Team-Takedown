@@ -3,7 +3,7 @@ import { socket } from './Homepage'
 
 function HostPageTwo(props) {
 
-    
+
     function onHomepageClick() {
         props.setShowHomepage(true);
         props.setShowHostTwo(false);
@@ -29,28 +29,36 @@ function HostPageTwo(props) {
 }
 
     useEffect(() =>{
-
         const gameCode = generateGameCode()
         props.setGameCode(gameCode)
-        socket.emit('join-room', gameCode)
+        socket.emit('join-room', gameCode, 'admin', 'admin')
 
-        socket.on("room-joined", (roomid, id)=>{
-            console.log(`props.roomID: ${props.roomID}, roomid: ${roomid}`)
-            if(roomid == props.roomID){
-                console.log(`${id} has connected to ${roomid}`)
+        socket.on("room-joined", (roomid, id, username, team)=>{
+            //console.log(`props.roomID: ${props.roomID}, roomid: ${roomid}`)
+            if(roomid == gameCode){
+                if (team =='red') {
+                    props.setTeamRed([...props.teamRed, username])
+                }
+                else if (team == 'blue') {
+                    props.setTeamBlue([...props.teamBlue, username])
+                }
+                console.log(`${username} has connected to ${roomid} and is on team ${team}`)
             }
         })
-
-        props.setShowHost(false);
-        props.setShowHostTwo(true);
 
     }, [])
 
     return(
         <>
             <h1>GAME CODE: {props.gameCode}</h1> {/*Find a way to put updated game code here*/}
-            <h2>TEAM ONE</h2> {/*Find a way to put updated team name here*/}
-            <h2>TEAM TWO</h2>
+            <h2>TEAM RED</h2> {/*Find a way to put updated team name here*/}
+            {props.teamRed.map((name, index) => {
+                return <p key={index}>{name}</p>
+            })}
+            <h2>TEAM BLUE: </h2>
+            {props.teamBlue.map((name, index) => {
+                return <p key={index}>{name}</p>
+            })}
             <button id="back" onClick={()=> onHomepageClick()}>BACK</button>
             <button id="start" onClick={onStartClick}>START GAME</button>
         </>
