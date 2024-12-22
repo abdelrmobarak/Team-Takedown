@@ -49,9 +49,13 @@ html, body {
     justify-content: space-between;
 }
 
+#names {
+    font-family: 'roboto', sans-serif;
+}
+
 .red, .blue {
     color: #000000;
-    font-family: "Lilita One", sans-serif;
+    font-family: "Lilita One", serif;
     text-align: center;
     font-size: 1em;
 }

@@ -12,7 +12,7 @@ import AdminPage from './AdminPage.jsx';
 import PlayerPage from './PlayerPage.jsx';
 import DisplayScreen from './DisplayScreen.jsx'
 import questions from './Questions.json'
-
+import Tutorial from './Tutorial.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -35,6 +35,7 @@ function Index() {
   const [gameCode, setGameCode] = useState('')  
   const [teamRed, setTeamRed] = useState([])
   const [teamBlue, setTeamBlue] = useState([])
+  const [showTutorialScreen, setShowTutorialScreen] = useState(false)
   
  
   
@@ -62,7 +63,8 @@ function Index() {
     teamBlue,
     setTeamRed,
     setTeamBlue,
-    questions
+    questions,
+    setShowTutorialScreen,
   }
 
 
@@ -140,6 +142,12 @@ function Index() {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Display"
     return (
       <DisplayScreen {...props}/>)
+  }
+
+  if (showTutorialScreen) {
+    document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Tutorial"
+    return (
+      <Tutorial {...props}/>)
   }
 }
 
