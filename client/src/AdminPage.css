@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #19E679;
+    font-weight: bold;
+}
+
+
+.teams #red,#blue{
+    color: #ffffff; 
+    display: inline;
+    align-items: center; 
+    gap: 2em; 
+    margin-top: 0.6em;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 121);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#red {
+    background-color: #ff0000;
+}
+
+#blue {
+    background-color: #0000ff;
+}
+
+#next {
+    background-color: yellow; 
+    border: 3px solid rgb(0, 0, 121);
+    color: rgb(0, 0, 0);
+    padding: 1em 5em;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 0.5em; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.button-grids {
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    padding: 20px;
+}
+
+.button-grids button {
+    background-color:#058a43;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 121);
+}
+
+
+.qna {
+    text-align: center;
+    position: relative;
+    top: 0.5em;
+}
+
+.qna h1 {
+    font-size: 2rem;
+    padding: 0.5em;
+    max-width: 100%;
+    color: #000000;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 121);
+}
+
+.qna p {
+    background-color: yellow;
+    border: 3px solid rgb(0, 0, 121);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #0a070a;
+    margin-top: -1em;
+    padding: 0.3em;
+    width: 15em;
+    justify-self: center;
+}
+
+#pfg {
+    font-family: "arial";
+}
+.teams {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.teams button {
+    padding: 10px 20px;
+}
+
+#wrong {
+    background-color: #000000; 
+    margin-top: 10px;
+    font-size: 2.3em;
+    border: 3px solid rgb(0, 0, 121);
+    border-radius: 10px;
+    padding: 0.5em 0.5em;
+    margin-top: 0.5em;
+    color: white;
+    font-weight: bold;
+}
+
+h3 {
+    position: absolute;
+    top:0;
+    right:1.5em;
+    font-weight: bold;
+}
+

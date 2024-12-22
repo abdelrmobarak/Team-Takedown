@@ -50,14 +50,14 @@ function ContestantTwo(props) {
                         id="teamone"
                         onClick={() => setTeam('red')}    
                         style={{backgroundColor : team==='red' ? 'red' : 'black'}}                                  >
-                        Team One
+                        Team Red
                     </button>
                     <button
                         type="button"
                         id="teamtwo"
                         onClick={() => setTeam('blue')}  
                         style={{backgroundColor : team==='blue' ? 'blue' : 'black'}}                  >
-                        Team Two
+                        Team Blue
                     </button>
                 </div>
                 <button type="submit" id="join">JOIN</button>

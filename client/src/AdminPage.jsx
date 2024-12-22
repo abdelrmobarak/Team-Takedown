@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { socket } from "./Homepage"
+import "./AdminPage.css"
 
 function AdminPage(props) {
     const[ questionNumber, setQuestionNumber] = useState(Math.floor(Math.random() * props.questions.length))
@@ -80,7 +81,7 @@ function AdminPage(props) {
         }
     }
     return(
-        <>
+        <div className='adminpage'>
         <div className = "button-grids">
             <button id="one" onClick={(e) => pointsUpdate(e)}>{answer1}</button>
             <button id="two" onClick={(e) => pointsUpdate(e)}>{answer2}</button>
@@ -92,16 +93,16 @@ function AdminPage(props) {
         </div>
         <div className = "qna">
             <h1>{question}</h1>
-            <p>points for grabs: {points}</p>
+            <p id='pfg'>Points for Grabs: {points}</p>
             <button id="wrong">WRONG ANSWER</button>
         </div>
         <div className = "teams">
             <button id="red" onClick={(e)=>givePoints(e)}>Red Team</button>
             <button id="blue" onClick={(e)=>givePoints(e)}>Blue Team</button>
-            <button id="next" onClick={(e)=>update(e)}>Next Question</button>
         </div>
-
-        </>
+        <button id="next" onClick={(e)=>update(e)}>Next Question</button>
+        <h3>ADMIN PANEL</h3>
+        </div>
     )
 }
 

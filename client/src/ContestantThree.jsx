@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { socket } from './Homepage'
+import './Waiting.css'
 
 function ContestantThree(props) {
 
@@ -24,7 +25,7 @@ function ContestantThree(props) {
     },[])
     
     return(
-        <h1>Waiting For Host...</h1>
+        <h1 className='waiting'>Waiting For Host...</h1>
         
     )
 }

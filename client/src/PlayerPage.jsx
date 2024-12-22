@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { socket } from './Homepage'
 import { use } from 'react';
-
+import "./PlayerPage.css";
 
 function PlayerPage(props) {
     const [teammates, setTeammates] = useState([])
@@ -37,7 +37,6 @@ function PlayerPage(props) {
         <button id="buzz">PUSH</button>
         </>
     )
-        
 }
 
 export default PlayerPage;

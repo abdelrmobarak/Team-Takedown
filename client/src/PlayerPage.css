@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #19E679;
+}
+
+.turn {
+    font-family: "Lilita One", sans-serif;
+    color: #0f4b04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    font-size: 3em;
+}
+
+.buzz {
+    font-family: "Lilita One", sans-serif;
+    color: #0f4b04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    margin:auto;
+    top: 0.1em;
+    border-radius: 95%;
+    height: 3.5em;
+    width: 3.5em;
+    position: relative;
+    background-color: #02b93f;
+    border: none;
+    cursor: pointer;
+}
+
+.buzz:active {
+    color: #000201;
+    background-color: #03892f;
+}

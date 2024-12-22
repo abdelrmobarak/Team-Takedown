@@ -22,6 +22,11 @@ function Homepage(props) {
     props.setShowContestant(true);
   }
 
+  function onTutorialClick() {
+    props.setShowHomepage(false);
+    props.setShowTutorialScreen(true);
+  }
+
   return (
     <div className='homepage'>
     <h1>TEAM TAKEDOWN</h1>
@@ -34,6 +39,7 @@ function Homepage(props) {
     <button className="Player" onClick={()=> onContestantClick()}>
       Join as Player
     </button>
+    <button className="Tutorial" onClick={()=> onTutorialClick()}>How to Play</button>
     <footer>
       <p>With ❤️ By Abdel-Rahman Mobarak & Augustine Osezua</p>
     </footer>

@@ -52,13 +52,13 @@ function HostPageTwo(props) {
                 <div className='red'>
                     <h2>TEAM <span className="redred">RED:</span></h2>
                     {props.teamRed.map((name, index) => {
-                        return <p key={index}>{name}</p>
+                        return <p key={index} id='names'>{name}</p>
                     })}
                 </div>
                 <div className='blue'>
                     <h2>TEAM <span className="blueblue">BLUE:</span></h2>
                     {props.teamBlue.map((name, index) => {
-                        return <p key={index}>{name}</p>
+                        return <p key={index} id='names'>{name}</p>
                     })}
                 </div>
             </div>

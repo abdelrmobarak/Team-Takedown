@@ -1,0 +1,14 @@
+.waiting {
+    font-family: "Lilita One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    font-size: 5vw; 
+    margin-top: 40vh;
+}
+@media only screen and (max-width: 500px) {
+    .waiting {
+        transform: translateY(0vh); 
+        font-size: 3em; 
+}}
