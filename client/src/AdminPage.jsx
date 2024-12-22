@@ -19,7 +19,36 @@ function AdminPage(props) {
         answer2 = props.questions[questionNumber].Answer2
         answer3 = props.questions[questionNumber].Answer3
         pointsForQuestions = [props.questions[questionNumber].pointsFor1, props.questions[questionNumber].pointsFor2, props.questions[questionNumber].pointsFor3]
+        socket.emit('clear-all-server', props.gameCode)
+        socket.emit('change-turn-server', props.gameCode)
     }
+
+    function shuffleArray(array) {
+        let shuffledArray = array.slice(); // Create a copy of the array
+        for (let i = shuffledArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+        }
+        return shuffledArray;
+    }
+
+    function setTeamOrder(team) {
+        var orderedTeam = team
+        while(orderedTeam.length < 5){
+            orderedTeam = [...orderedTeam, ...team];
+        }
+        return shuffleArray(orderedTeam.splice(0,5))
+    }
+
+    useEffect(() => {
+        socket.on('get-teammates', team =>{
+            if(team === 'red'){
+                socket.emit('get-teammates-server-Response', props.gameCode, setTeamOrder(props.teamRed), 'red')
+            }else if(team === 'blue'){
+                socket.emit('get-teammates-server-Response', props.gameCode, setTeamOrder(props.teamBlue), 'blue')
+            }
+        })
+    })
 
     function idToPoints(id){
         const wordMap = {

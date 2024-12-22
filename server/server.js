@@ -13,6 +13,8 @@ const io = new Server(httpServer,{
     }
 })
 
+
+
 io.on('connection', socket => {
     console.log(`${socket.id} has connected`)
     socket.on('message', data =>{
@@ -37,6 +39,21 @@ io.on('connection', socket => {
         io.to(gameCode).emit('show-answer', questionNumber, answer)
     })
 
+    socket.on('clear-all-server', (gameCode)=>{
+        io.to(gameCode).emit('clear-all')
+    })
+
+    socket.on('get-teammates-server', (gameCode, team) =>{
+        io.to(gameCode).emit('get-teammates', team)
+    })
+
+    socket.on('get-teammates-server-Response', (gameCode, teammates, team) =>{
+        io.to(gameCode).emit('get-teammates-Response', teammates, team)
+    })
+
+    socket.on('change-turn-server', (gameCode) =>{
+        io.to(gameCode).emit('change-turn')
+    })
     
 })
 

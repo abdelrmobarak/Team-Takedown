@@ -6,13 +6,13 @@ function DisplayScreen(props) {
     const [redpoints, setRedPoints] = useState(0)
     const [bluepoints, setBluePoints] = useState(0)
 
-    const [answer1, setAnswer1] = useState(' - ')
-    const [answer2, setAnswer2] = useState(' - ')
-    const [answer3, setAnswer3] = useState(' - ')
-    const [answer4, setAnswer4] = useState(' - ')
-    const [answer5, setAnswer5] = useState(' - ')
-    const [answer6, setAnswer6] = useState(' - ')  
-    const [answer7, setAnswer7] = useState(' - ')
+    const [answer1, setAnswer1] = useState(' 1 ')
+    const [answer2, setAnswer2] = useState(' 2 ')
+    const [answer3, setAnswer3] = useState(' 3 ')
+    const [answer4, setAnswer4] = useState(' 4 ')
+    const [answer5, setAnswer5] = useState(' 5 ')
+    const [answer6, setAnswer6] = useState(' 6 ')  
+    const [answer7, setAnswer7] = useState(' 7 ')
 
     socket.on('give-points', (team, points) => {
         console.log("team: ", team, " points: ", points)
@@ -49,6 +49,16 @@ function DisplayScreen(props) {
             default:
                 break;
         }
+    })
+
+    socket.on('clear-all', () => { 
+        setAnswer1(' 1 ')
+        setAnswer2(' 2 ')
+        setAnswer3(' 3 ')
+        setAnswer4(' 4 ')
+        setAnswer5(' 5 ')
+        setAnswer6(' 6 ')
+        setAnswer7(' 7 ')
     })
 
 
