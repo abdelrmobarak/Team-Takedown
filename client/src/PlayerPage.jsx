@@ -8,7 +8,6 @@ function PlayerPage() {
         <button className="buzz">PUSH</button>
         </>
     )
-        
 }
 
 export default PlayerPage;

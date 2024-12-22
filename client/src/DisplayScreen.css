@@ -1,0 +1,64 @@
+html, body {
+    background: #19E679;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.displayscreen .points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em
+}
+
+.displayscreen .totalpoints{
+    position: relative;
+}
+
+.displayscreen .roomid {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    bottom: -0.5em;
+    left: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    transform: translateX(-50%)
+}
+
+.displayscreen .answers {
+    position: relative;
+    display: grid;
+    font-size: 1.4em;
+    justify-content: center;
+    align-items: center;
+    grid-column: auto;
+    grid-row: auto;
+    column-gap: 12em;
+    margin: auto;
+    padding: auto;
+    border: 3px solid #ccc;
+    border-radius: 40px;
+    width: 85%;
+    height: 20em
+}
+.displayscreen .answers h1 {
+    margin: 0;
+    padding: 0;
+}
+.displayscreen #one {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    border: 3px solid #ccc;
+    padding: 0.2em;
+}
+
+.displayscreen #two {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+
+

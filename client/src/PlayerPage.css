@@ -29,4 +29,10 @@ html, body {
     position: relative;
     background-color: #02b93f;
     border: none;
+    cursor: pointer;
+}
+
+.buzz:active {
+    color: #000201;
+    background-color: #03892f;
 }
