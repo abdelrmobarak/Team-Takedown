@@ -55,11 +55,15 @@ function DisplayScreen(props) {
 
     return(
         <div className='displayscreen'>
-            <div className='points'>
-        <h1 className="redpoints">Team Red</h1>
+        <div className='points'>
+        <div className='redpoints'>
+        <h1>Team Red</h1>
         <h1>{redpoints}</h1>
-        <h1 className="bluepoints">Team Blue</h1>
+        </div>
+        <div className='bluepoints'>
+        <h1>Team Blue</h1>
         <h1>{bluepoints}</h1>
+        </div>
         </div>
         <p className='roomid'>{props.roomID}</p>
         <h1 className="totalpoints">0</h1>
