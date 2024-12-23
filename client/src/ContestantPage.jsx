@@ -16,7 +16,7 @@ function ContestantPage(props) {
             props.setShowContestant(false)
             props.setShowContestantTwo(true)
             console.log(gameCode) // debugging
-            props.setRoomID(gameCode)}
+            props.setRoomID(gameCode.toUpperCase())}
         else {
             alert("Enter a game code!")
         }

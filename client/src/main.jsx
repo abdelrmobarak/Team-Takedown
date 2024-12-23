@@ -11,7 +11,7 @@ import DisplayPageTwo from './DisplayPageTwo.jsx'
 import AdminPage from './AdminPage.jsx';
 import PlayerPage from './PlayerPage.jsx';
 import DisplayScreen from './DisplayScreen.jsx'
-import questions from './Questions.json'
+import questions from './familyFeud.json'
 import Tutorial from './Tutorial.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
