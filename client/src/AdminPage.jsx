@@ -101,7 +101,6 @@ function AdminPage(props) {
             <button id="blue" onClick={(e)=>givePoints(e)}>Blue Team</button>
         </div>
         <button id="next" onClick={(e)=>update(e)}>Next Question</button>
-        <h3>ADMIN PANEL</h3>
         </div>
     )
 }

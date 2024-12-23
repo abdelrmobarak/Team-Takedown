@@ -34,7 +34,7 @@ function PlayerPage(props) {
     return(
         <>
         <h1>Your team: {currentIndex}</h1>
-        <button id="buzz">PUSH</button>
+        <button className="buzz">PUSH</button>
         </>
     )
 }
