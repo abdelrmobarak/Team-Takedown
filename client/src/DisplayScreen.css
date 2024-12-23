@@ -25,24 +25,23 @@
     width: 50%; 
     margin-bottom: 20px;
     position: absolute;
-    top: 2em;
+    top: -0.5em;
 
 }
 
 .redpoints, .bluepoints {
-    margin-top: 2em;
-    flex: 0 1 25%; 
+    margin-top: 0em; 
     background-color: #19E679;
     border: 4px solid rgb(18, 3, 148);
     border-radius: 15px;
     text-align: center;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .totalpoints {
-    margin-top: 2em;
+    margin-top: 0.5em;
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%);
@@ -100,4 +99,149 @@
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 1920px) {
+    .redpoints, .bluepoints {
+        margin-top: 1em; 
+        background-color: #19E679;
+        border: 4px solid rgb(18, 3, 148);
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        font-size: 2em;
+    }
+
+    .totalpoints {
+        margin-top: 0.5em;
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%);
+        top:3em; 
+        width: 10%; 
+        height: 10%;
+        aspect-ratio: 1; 
+        background-color: #19E679;
+        border: 4px solid rgb(18, 3, 148);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        border-radius: 10%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .answers {
+        margin-top: 15em;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 8px;
+        width: 60%;
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 3em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        color: white;
+        border: 4px solid rgb(18, 3, 148);
+    }
+    
+    .answers h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #19E679;
+        color: white;
+        padding: 10px 15px;
+        font-size: 3.5rem;
+        border-radius: 10px;
+        border: 4px solid rgb(18, 3, 148);
+        margin: 0px;
+    }
+
+    .roomid {
+        position: absolute;
+        bottom: 10px;
+        font-size: 2rem;
+        background-color: white;
+        color: #33CC66;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+
+@media only screen and (min-width: 3840px) {
+    .redpoints, .bluepoints {
+        margin-top: 1em; 
+        background-color: #19E679;
+        border: 4px solid rgb(18, 3, 148);
+        border-radius: 25px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        font-size: 4em;
+    }
+
+    .totalpoints {
+        margin-top: 0.5em;
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%);
+        top:3em; 
+        width: 10%; 
+        height: 10%;
+        aspect-ratio: 1; 
+        background-color: #19E679;
+        border: 4px solid rgb(18, 3, 148);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        border-radius: 10%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .answers {
+        margin-top: 30em;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 8px;
+        width: 60%;
+        background-color: #ffffff;
+        border-radius: 25px;
+        padding: 10em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        color: white;
+        border: 4px solid rgb(18, 3, 148);
+    }
+    
+    .answers h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #19E679;
+        color: white;
+        padding: 10px 15px;
+        font-size: 8.5rem;
+        border-radius: 25px;
+        border: 4px solid rgb(18, 3, 148);
+        margin: 0px;
+    }
+
+    .roomid {
+        position: absolute;
+        bottom: 10px;
+        font-size: 5rem;
+        background-color: white;
+        color: #33CC66;
+        padding: 5px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
 }
