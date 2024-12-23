@@ -1,9 +1,3 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #19E679;
-}
-
 .turn {
     font-family: "Lilita One", sans-serif;
     color: #0f4b04;
@@ -35,4 +29,44 @@ html, body {
 .buzz:active {
     color: #000201;
     background-color: #03892f;
+}
+
+
+
+.teammates {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.teammates h2 {
+    font-size: 1.5em;
+    color: #0f4b04;
+    margin: 0;
+}
+
+.teammates p {
+    font-size: 1em;
+    color: #0f4b04;
+    margin: 0.5em 0;
+}
+
+
+.buzz:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+.name {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
 }

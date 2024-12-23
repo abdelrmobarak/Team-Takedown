@@ -25,6 +25,7 @@ io.on('connection', socket => {
         socket.join(roomID)
         console.log(`User with id ${socket.id} has joined ${roomID}`)
         io.emit('room-joined', roomID, socket.id, name, team)
+        io.emit('check-room', roomID, socket.id, name, team)
     })
 
     socket.on('game-start-server', (gameCode) =>{
@@ -54,7 +55,16 @@ io.on('connection', socket => {
     socket.on('change-turn-server', (gameCode) =>{
         io.to(gameCode).emit('change-turn')
     })
+
+    socket.on('button-pressed-server', (roomID, team, name) =>{
+        io.to(roomID).emit('close-buttons', name)
+        io.to(roomID).emit('button-pressed', team, name)
+    })
     
+    socket.on('kick-server', (roomID, id, name) =>{
+        //console.log(`Kicking ${name} from ${roomID} they have id: ${id}`)
+        io.to(roomID).emit('kick', roomID, id, name)
+    })
 })
 
 httpServer.listen(port, ()=> {

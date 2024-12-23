@@ -5,12 +5,26 @@ import "./AdminPage.css"
 function AdminPage(props) {
     const[ questionNumber, setQuestionNumber] = useState(Math.floor(Math.random() * props.questions.length))
     const [points, setPoints] = useState(0)
+    const [whoPressed, setWhoPressed] = useState('')
     
     var question = props.questions[questionNumber].Question
     var answer1 = props.questions[questionNumber].Answer1
     var answer2 = props.questions[questionNumber].Answer2
     var answer3 = props.questions[questionNumber].Answer3
-    var pointsForQuestions = [props.questions[questionNumber].pointsFor1, props.questions[questionNumber].pointsFor2, props.questions[questionNumber].pointsFor3]
+    var answer4 = props.questions[questionNumber].Answer4 || " "
+    var answer5 = props.questions[questionNumber].Answer5 || " "
+    var answer6 = props.questions[questionNumber].Answer6 || " "
+    var answer7 = props.questions[questionNumber].Answer7 || " "
+
+    var pointsForQuestions = 
+        [
+        props.questions[questionNumber].pointsFor1,
+        props.questions[questionNumber].pointsFor2,
+        props.questions[questionNumber].pointsFor3,
+        props.questions[questionNumber].pointsFor4 || 0,
+        props.questions[questionNumber].pointsFor5 || 0,
+        props.questions[questionNumber].pointsFor6 || 0,
+        props.questions[questionNumber].pointsFor7 || 0 ]
 
     function update(e) {
         e.preventDefault()
@@ -19,7 +33,16 @@ function AdminPage(props) {
         answer1 = props.questions[questionNumber].Answer1
         answer2 = props.questions[questionNumber].Answer2
         answer3 = props.questions[questionNumber].Answer3
-        pointsForQuestions = [props.questions[questionNumber].pointsFor1, props.questions[questionNumber].pointsFor2, props.questions[questionNumber].pointsFor3]
+        pointsForQuestions = 
+        [
+        props.questions[questionNumber].pointsFor1,
+        props.questions[questionNumber].pointsFor2,
+        props.questions[questionNumber].pointsFor3,
+        props.questions[questionNumber].pointsFor4 || 0,
+        props.questions[questionNumber].pointsFor5 || 0,
+        props.questions[questionNumber].pointsFor6 || 0,
+        props.questions[questionNumber].pointsFor7 || 0 
+    ]
         socket.emit('clear-all-server', props.gameCode)
         socket.emit('change-turn-server', props.gameCode)
     }
@@ -49,8 +72,14 @@ function AdminPage(props) {
                 socket.emit('get-teammates-server-Response', props.gameCode, setTeamOrder(props.teamBlue), 'blue')
             }
         })
+        
+        socket.on('button-pressed', (team, name) =>{
+            setWhoPressed(name)
+            console.log(`${name} from ${team} has pressed the button`)
+        })
     })
 
+    
     function idToPoints(id){
         const wordMap = {
             "one": 1,
@@ -86,10 +115,10 @@ function AdminPage(props) {
             <button id="one" onClick={(e) => pointsUpdate(e)}>{answer1}</button>
             <button id="two" onClick={(e) => pointsUpdate(e)}>{answer2}</button>
             <button id="three" onClick={(e) => pointsUpdate(e)}>{answer3}</button>
-            <button id="four" onClick={(e) => pointsUpdate(e)}>#4 Answer</button>
-            <button id="five" onClick={(e) => pointsUpdate(e)}>#5 Answer</button>
-            <button id="six" onClick={(e) => pointsUpdate(e)}>#6 Answer</button>
-            <button id="seven" onClick={(e) => pointsUpdate(e)}>#7 Answer</button>
+            <button id="four" onClick={(e) => pointsUpdate(e)}>{answer4}</button>
+            <button id="five" onClick={(e) => pointsUpdate(e)}>{answer5}</button>
+            <button id="six" onClick={(e) => pointsUpdate(e)}>{answer6}</button>
+            <button id="seven" onClick={(e) => pointsUpdate(e)}>{answer7}</button>
         </div>
         <div className = "qna">
             <h1>{question}</h1>
@@ -101,7 +130,7 @@ function AdminPage(props) {
             <button id="blue" onClick={(e)=>givePoints(e)}>Blue Team</button>
         </div>
         <button id="next" onClick={(e)=>update(e)}>Next Question</button>
-        <h3>ADMIN PANEL</h3>
+        <h3>ADMIN PANEL CODE: {props.gameCode}</h3>
         </div>
     )
 }

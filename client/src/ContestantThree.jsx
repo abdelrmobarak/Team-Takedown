@@ -4,7 +4,6 @@ import './Waiting.css'
 
 function ContestantThree(props) {
 
-    var teamMembers;
     useEffect(()=>{ 
         socket.on('game-start',(gameCode)=>{
             if (gameCode == props.roomID){
@@ -13,15 +12,16 @@ function ContestantThree(props) {
             }
         })
         
-    if (props.team == 'blue'){
-        teamMembers = props.teamBlue.map((name, index) => {
-            return <p key={index}>{name}</p>
+        socket.on('kick', (roomid, id, username) => {
+            console.log(`Kicking ${username} from ${roomid} they have id: ${id}`)
+            if (roomid === props.roomID && id === socket.id){
+                alert('Game is full or name has been used')
+                props.setShowContestantThree(false)
+                props.setShowHomepage(true)
+                socket.leave(roomid)
+            }
         })
-    }else if (props.team == 'blue'){
-        teamMembers = props.teamBlue.map((name, index) => {
-            return <p key={index}>{name}</p>
-        })
-    }
+        
     },[])
     
     return(
