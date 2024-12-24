@@ -84,3 +84,10 @@ span {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.tutorial img {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

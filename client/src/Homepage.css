@@ -3,84 +3,80 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-}
-
-.lilita-one-regular {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .lilita-one-regular {
     font-family: "Lilita One", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.homepage body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  }
+  
+  .homepage {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-}
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; 
+  }
   
-.homepage h1 {
+  .homepage h1 {
     color: #116337;
     font-family: 'Lilita One', serif;
     text-align: center;
-    margin: 20px 0;
     font-size: 4.5rem;
-}
+    margin: 3rem 1rem; /
+  }
   
-.homepage footer {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 0.9rem;
-    color: #1d1d1d;
-}
-
-.homepage footer p {
-    background-color: rgba(128, 128, 128, 0.22);
-    padding: 10px;
-    position: relative;
-    align-self: center;
-    font-weight: bold;
-    font-family: 'arial', sans-serif;
-}
-
-.homepage button {
+  .homepage .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .homepage .logo {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .homepage .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  
+  .homepage button {
     font-family: 'Lilita One', serif;
     display: block;
-    width: 80%;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    margin: 0.2em auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 2.2rem;
     background-color: #047721;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
   
-.homepage button:hover {
+  .homepage button:hover {
     background-color: #054b08;
-}
-
-
-.homepage .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
+  }
   
-.homepage .logo {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e9ecef;
-}
+  .homepage footer {
+    position: relative;
+    text-align: center;
+    font-size: 0.94rem;
+    color: #1d1d1d;
+    margin-top: auto; 
+  }
   
-.homepage .logo img {
-    max-width: 200px;
-    max-height: 200px;
-}
-
+  .homepage footer p {
+    position: relative;
+    align-self: center;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+  }
+  

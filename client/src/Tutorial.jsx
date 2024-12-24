@@ -25,6 +25,7 @@ function Tutorial(props) {
                     <h1>How to Play</h1>
                     <h2>Minimum Requirements: One Host, One Display Screen, Two Players</h2>
                     <h3>Click on a Section to Learn how to Play!</h3>
+                    <img src='ttfull.png' className='ttfull'></img>
                     <button className='player' onClick={() => setOption('player')}>Player</button>
                     <button className='host' onClick={() => setOption('host')}>Host</button>
                     <button className='display' onClick={() => setOption('display')}>Display</button>
