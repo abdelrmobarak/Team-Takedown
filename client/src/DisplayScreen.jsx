@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react'
 import {socket} from './Homepage'
 import './DisplayScreen.css'
 
+
 function DisplayScreen(props) {
 
     const [redpoints, setRedPoints] = useState(0)
     const [bluepoints, setBluePoints] = useState(0)
+    const [totalpoints, setTotalPoints] = useState(0)
+    const [hidden, setHidden] = useState('hidden')
+
 
     const [answer1, setAnswer1] = useState('1')
     const [answer2, setAnswer2] = useState('2')
@@ -17,11 +21,29 @@ function DisplayScreen(props) {
 
     socket.on('give-points', (team, points) => {
         console.log("team: ", team, " points: ", points)
+        setTotalPoints(0)
         if (team == 'red'){
             setRedPoints(points + redpoints)
         }else if (team == 'blue'){
             setBluePoints(points + bluepoints)
         }
+    })
+
+    socket.on('show-wrong-answer', () => {
+        console.log('showing wrong answer')
+        setHidden('not-hidden')
+        hideX()
+    })
+
+    function hideX(){
+        setTimeout(() => {
+            setHidden('hidden');
+          }, 1300);
+    }
+        
+
+    socket.on('update-points', (points) => {
+        setTotalPoints(points)
     })
 
     socket.on('show-answer', (questionNumber, answer) => {
@@ -60,6 +82,7 @@ function DisplayScreen(props) {
         setAnswer5(' 5 ')
         setAnswer6(' 6 ')
         setAnswer7(' 7 ')
+        setTotalPoints(0)
     })
 
 
@@ -76,7 +99,7 @@ function DisplayScreen(props) {
         </div>
         </div>
         <p className='roomid'>{props.roomID}</p>
-        <h1 className="totalpoints">0</h1>
+        <h1 className="totalpoints">{totalpoints}</h1>
         <div className = 'answers'>
         <h1 id='one'>{answer1}</h1>
         <h1 id='two'>{answer2}</h1>
@@ -85,6 +108,9 @@ function DisplayScreen(props) {
         <h1 id='five'>{answer5}</h1>
         <h1 id='six'>{answer6}</h1>
         <h1 id='seven'>{answer7}</h1>
+        </div>
+        <div className={hidden} id='cointainer-x'>
+            <div className="red-x"></div>
         </div>
         </div>
         )

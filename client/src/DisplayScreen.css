@@ -9,6 +9,7 @@
     font-family: 'Inter', sans-serif;
     color: rgb(255, 255, 255);
     position: relative;
+    overflow: hidden;
 }
 
 .lilita-one-regular {
@@ -244,4 +245,40 @@
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
+}
+
+#cointainer-x {
+    z-index: 1;
+    align-self:center;
+    justify-content: center
+  }
+  
+  .red-x {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:50%;
+    bottom: 50%;
+  }
+  
+  .red-x::before,
+  .red-x::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10vw; /* Adjust thickness of the "X" */
+    background-color: red;
+    transform-origin: center;
+  }
+  
+  .red-x::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .red-x::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+.hidden{
+    display: none;
 }

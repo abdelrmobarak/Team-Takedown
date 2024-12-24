@@ -5,7 +5,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 .tutorial {
-  margin-top: 10em;
+  margin-top: 5em;
 }
 .tutorial h1 {
   position: relative;
@@ -30,6 +30,7 @@ html, body {
   margin: auto;
   font-size: 3em;
   margin-top: 0.5em;
+  margin-bottom: 1em;
   border-radius: 1em;
   border: none;
   padding: 0.1em 0.4em;

@@ -14,6 +14,7 @@ import DisplayScreen from './DisplayScreen.jsx'
 import questions from './familyFeud.json'
 import Tutorial from './Tutorial.jsx'
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Index() {
@@ -36,6 +37,7 @@ function Index() {
   const [teamRed, setTeamRed] = useState([])
   const [teamBlue, setTeamBlue] = useState([])
   const [showTutorialScreen, setShowTutorialScreen] = useState(false)
+
   
  
   
@@ -65,6 +67,7 @@ function Index() {
     setTeamBlue,
     questions,
     setShowTutorialScreen,
+
   }
 
 

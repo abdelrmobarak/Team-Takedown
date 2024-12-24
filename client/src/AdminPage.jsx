@@ -5,7 +5,16 @@ import "./AdminPage.css"
 function AdminPage(props) {
     const[ questionNumber, setQuestionNumber] = useState(Math.floor(Math.random() * props.questions.length))
     const [points, setPoints] = useState(0)
-    const [whoPressed, setWhoPressed] = useState('')
+    const [whoPressed, setWhoPressed] = useState(' - ')
+    const [isDisabled, setIsDisabled] = useState({
+        btn1: false,
+        btn2: false,
+        btn3: false,
+        btn4: false,
+        btn5: false,
+        btn6: false,
+        btn7: false
+    })
     
     var question = props.questions[questionNumber].Question
     var answer1 = props.questions[questionNumber].Answer1
@@ -28,6 +37,7 @@ function AdminPage(props) {
 
     function update(e) {
         e.preventDefault()
+        e.target.disabled
         setQuestionNumber(Math.floor(Math.random() * props.questions.length))
         question = props.questions[questionNumber].Question
         answer1 = props.questions[questionNumber].Answer1
@@ -45,6 +55,14 @@ function AdminPage(props) {
     ]
         socket.emit('clear-all-server', props.gameCode)
         socket.emit('change-turn-server', props.gameCode)
+
+        updateItem("btn1", false);
+        updateItem("btn2", false);
+        updateItem("btn3", false);
+        updateItem("btn4", false);
+        updateItem("btn5", false);
+        updateItem("btn6", false);
+        updateItem("btn7", false);
     }
 
     function shuffleArray(array) {
@@ -93,10 +111,45 @@ function AdminPage(props) {
         return wordMap[id.toLowerCase()] || null;
     }
 
+    // Function to update a specific value
+        const updateItem = (key, value) => {
+            setIsDisabled((prevState) => ({
+            ...prevState,
+            [key]: value
+            }));
+        };
+
     function pointsUpdate(e) {
         e.preventDefault()
+        switch (e.target.id) {
+            case "one":
+                updateItem("btn1", true);
+                break;
+            case "two":
+                updateItem("btn2", true);
+                break;
+            case "three":
+                updateItem("btn3", true);
+                break;
+            case "four":
+                updateItem("btn4", true);
+                break;
+            case "five":
+                updateItem("btn5", true);
+                break;
+            case "six":
+                updateItem("btn6", true);
+                break;
+            case "seven":
+                updateItem("btn7", true);
+                break;
+            default:
+                break;
+        }
         socket.emit('show-answer-server', props.gameCode, questionNumber, idToPoints(e.target.id))
-        setPoints(points + pointsForQuestions[idToPoints(e.target.id)-1])
+        var newPoint = points + pointsForQuestions[idToPoints(e.target.id)-1]
+        setPoints(newPoint)
+        socket.emit('update-points-server', props.gameCode, newPoint)
     }
 
     function givePoints(e){
@@ -109,21 +162,26 @@ function AdminPage(props) {
             setPoints(0)
         }
     }
+
+    function wrongAnswer(e){
+        e.preventDefault()
+        socket.emit('show-wrong-answer-server', props.gameCode)
+    }   
     return(
         <div className='adminpage'>
         <div className = "button-grids">
-            <button id="one" onClick={(e) => pointsUpdate(e)}>{answer1}</button>
-            <button id="two" onClick={(e) => pointsUpdate(e)}>{answer2}</button>
-            <button id="three" onClick={(e) => pointsUpdate(e)}>{answer3}</button>
-            <button id="four" onClick={(e) => pointsUpdate(e)}>{answer4}</button>
-            <button id="five" onClick={(e) => pointsUpdate(e)}>{answer5}</button>
-            <button id="six" onClick={(e) => pointsUpdate(e)}>{answer6}</button>
-            <button id="seven" onClick={(e) => pointsUpdate(e)}>{answer7}</button>
+            <button id="one" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn1}>{answer1}</button>
+            <button id="two" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn2} >{answer2}</button>
+            <button id="three" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn3}>{answer3}</button>
+            <button id="four" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn4}>{answer4}</button>
+            <button id="five" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn5}>{answer5}</button>
+            <button id="six" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn6}>{answer6}</button>
+            <button id="seven" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn7}>{answer7}</button>
         </div>
         <div className = "qna">
             <h1>{question}</h1>
             <p id='pfg'>Points for Grabs: {points}</p>
-            <button id="wrong">WRONG ANSWER</button>
+            <button id="wrong" onClick={(e)=> wrongAnswer(e)}>WRONG ANSWER</button>
         </div>
         <div className = "teams">
             <button id="red" onClick={(e)=>givePoints(e)}>Red Team</button>
@@ -131,6 +189,7 @@ function AdminPage(props) {
         </div>
         <button id="next" onClick={(e)=>update(e)}>Next Question</button>
         <h3>ADMIN PANEL CODE: {props.gameCode}</h3>
+        <h3>{whoPressed} pressed the button first</h3>
         </div>
     )
 }

@@ -62,8 +62,16 @@ io.on('connection', socket => {
     })
     
     socket.on('kick-server', (roomID, id, name) =>{
-        //console.log(`Kicking ${name} from ${roomID} they have id: ${id}`)
+        //console.log(`Kicking ${name} from ${roomID} they have id: ${id}`) //debugging
         io.to(roomID).emit('kick', roomID, id, name)
+    })
+
+    socket.on('update-points-server', (gameCode, points) =>{
+        io.to(gameCode).emit('update-points', points)
+    })
+
+    socket.on('show-wrong-answer-server', (gameCode) =>{
+        io.to(gameCode).emit('show-wrong-answer')
     })
 })
 
