@@ -30,7 +30,7 @@
 }
 
 .redpoints, .bluepoints {
-    margin-top: 0em; 
+    margin-top: 2em; 
     background-color: #19E679;
     border: 4px solid rgb(18, 3, 148);
     border-radius: 15px;

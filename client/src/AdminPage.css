@@ -5,6 +5,7 @@ html, body {
     background-color: #19E679;
     font-weight: bold;
     overflow: auto;
+    transform: scale(1);
 }
 
 
@@ -122,9 +123,10 @@ html, body {
 }
 
 h3 {
-    position: absolute;
-    bottom:0;
-    right:1.5em;
+    position: relative;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 

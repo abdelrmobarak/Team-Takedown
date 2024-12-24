@@ -16,7 +16,7 @@
     align-items: center;
     font-size: 6em;
     margin:auto;
-    top: 0.1em;
+    top: -0.3em;
     border-radius: 95%;
     height: 3.5em;
     width: 3.5em;
@@ -35,13 +35,13 @@
 
 .teammates {
     position: absolute;
-    bottom: 1em;
+    bottom: 1.5em;
     right: 1em;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
 }
 
 .teammates h2 {
@@ -53,7 +53,7 @@
 .teammates p {
     font-size: 1em;
     color: #0f4b04;
-    margin: 0.5em 0;
+    margin: 0.5em 0em;
 }
 
 
@@ -69,4 +69,8 @@
     color: white;
     font-size: 1.5em;
     margin: 0;
+}
+
+.turn {
+    text-align: center;
 }
