@@ -68,7 +68,7 @@ span {
 }
 @media only screen and (min-width: 1000px) {
   .tutorial .players, .tutorial .hosts, .tutorial .displays {
-    margin-top: 7em;
+    margin-top: 7rem;
   }
 }
 
@@ -83,11 +83,4 @@ span {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.tutorial img {
-  position: absolute;
-  bottom: -5rem;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
