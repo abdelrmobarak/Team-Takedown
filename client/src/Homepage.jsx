@@ -28,6 +28,7 @@ function Homepage(props) {
   }
 
   return (
+    
     <div className='homepage'>
       <h1>TEAM TAKEDOWN</h1>
       <div className='logo-container'>

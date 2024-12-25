@@ -130,3 +130,27 @@ h3 {
     text-align: center;
 }
 
+@media only screen and (max-width: 390px) {
+    .teams #red,#blue {
+        font-size: 1.2rem;
+    }
+    #next {
+        font-size: 1.2rem;
+    }
+    .button-grids button {
+        font-size: 1rem;
+    }
+    .qna h1 {
+        font-size: 1.5rem;
+    }
+    .qna p {
+        font-size: 1rem;
+    }
+    #wrong {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+  
+  }

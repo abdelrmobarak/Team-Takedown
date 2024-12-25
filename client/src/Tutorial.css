@@ -84,3 +84,22 @@ span {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+@media only screen and (max-width: 390px) {
+  .tutorial h1 {
+    font-size: 2rem;
+  }
+
+  .tutorial h2 {
+    font-size: 1.2rem;
+  }
+
+  .tutorial h3 {
+    font-size: 1.3rem;
+  }
+
+  .tutorial button {
+    font-size: 1.5rem;
+  }
+
+}

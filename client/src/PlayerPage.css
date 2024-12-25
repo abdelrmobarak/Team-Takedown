@@ -74,3 +74,61 @@
 .turn {
     text-align: center;
 }
+
+@media only screen and (max-width: 390px) {
+    .buzz {
+        font-size: 4em;
+        height: 3em;
+        width: 3em;
+    }
+
+    .teammates {
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .teammates h2 {
+        font-size: 1.2rem;
+    }
+
+    .teammates p {
+        font-size: 0.8rem;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .turn {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 430px) {
+    .buzz {
+        font-size: 6rem;
+        height: 3.5em;
+        width: 3.5em;
+    }
+
+    .teammates {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .teammates h2 {
+        font-size: 1.3em;
+    }
+
+    .teammates p {
+        font-size: 0.9rem;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    .turn {
+        font-size: 2.7rem;
+    }
+  }
