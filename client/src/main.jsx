@@ -13,6 +13,7 @@ import PlayerPage from './PlayerPage.jsx';
 import DisplayScreen from './DisplayScreen.jsx'
 import questions from './familyFeud.json'
 import Tutorial from './Tutorial.jsx'
+import Winner from './Winner.jsx'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -37,6 +38,7 @@ function Index() {
   const [teamRed, setTeamRed] = useState([])
   const [teamBlue, setTeamBlue] = useState([])
   const [showTutorialScreen, setShowTutorialScreen] = useState(false)
+  const [showWinner, setShowWinner] = useState(false)
 
   
  
@@ -67,7 +69,7 @@ function Index() {
     setTeamBlue,
     questions,
     setShowTutorialScreen,
-
+    setShowWinner
   }
 
 
@@ -151,6 +153,12 @@ function Index() {
     document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - Tutorial"
     return (
       <Tutorial {...props}/>)
+  }
+
+  if (showWinner) {
+    document.getElementById("Title").innerHTML = "TEAM TAKEDOWN - End Game"
+    return (
+      <Winner {...props}/>)
   }
 }
 

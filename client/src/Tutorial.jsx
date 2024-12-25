@@ -20,9 +20,6 @@ function Tutorial(props) {
 
     return (
         <div className='tutorial'>
-            
-            <img src="ttfull.png" alt="Trivia Time Logo" />
-
             {selectedOption === null ? ( 
                 <>
                     <h1>How to Play</h1>

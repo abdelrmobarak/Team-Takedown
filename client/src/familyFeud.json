@@ -18,15 +18,6 @@
       "pointsFor3": 15
     },
     {
-      "Question": "Name A Job In Which An Attractive Person Probably Makes Better Tips.",
-      "Answer1": "Server",
-      "pointsFor1": 65,
-      "Answer2": "Exotic Dancer",
-      "pointsFor2": 19,
-      "Answer3": "Bartender",
-      "pointsFor3": 13
-    },
-    {
       "Question": "Name A Prop used By Tap Dancers",
       "Answer1": "Cane",
       "pointsFor1": 65,
@@ -9008,17 +8999,6 @@
       "pointsFor4": 5
     },
     {
-      "Question": "Name A Topic That People Might Whisper About.",
-      "Answer1": "Their Love Lives",
-      "pointsFor1": 46,
-      "Answer2": "Infidelity",
-      "pointsFor2": 35,
-      "Answer3": "Rumor",
-      "pointsFor3": 7,
-      "Answer4": "Divorce",
-      "pointsFor4": 6
-    },
-    {
       "Question": "Name A Person Or Character Who Is Referred To As “Lady.”",
       "Answer1": "Lady Gaga",
       "pointsFor1": 33,
@@ -12044,32 +12024,6 @@
       "pointsFor5": 3
     },
     {
-      "Question": "Name A Game That Would Be Inappropriate At A Company Party",
-      "Answer1": "Spin The Bottle",
-      "pointsFor1": 41,
-      "Answer2": "Strip Poker",
-      "pointsFor2": 32,
-      "Answer3": "Twister",
-      "pointsFor3": 11,
-      "Answer4": "Truth Or Dare",
-      "pointsFor4": 11,
-      "Answer5": "Beer Pong",
-      "pointsFor5": 3
-    },
-    {
-      "Question": "Tell Me Something That Would Get You Thrown Out Of Most Bars",
-      "Answer1": "Getting In A Fight",
-      "pointsFor1": 45,
-      "Answer2": "Drinking Too Much",
-      "pointsFor2": 29,
-      "Answer3": "Not Paying",
-      "pointsFor3": 6,
-      "Answer4": "Stripping",
-      "pointsFor4": 5,
-      "Answer5": "Being Underage",
-      "pointsFor5": 3
-    },
-    {
       "Question": "Name Something Specific That’s Out Of Proportion In A Child’s Drawing",
       "Answer1": "Head",
       "pointsFor1": 70,
@@ -15047,19 +15001,6 @@
       "pointsFor5": 7
     },
     {
-      "Question": "What Might You See In A Personals Ad That Makes You Think It Was Placed By A Barbie Doll?",
-      "Answer1": "Lookin For My Ken",
-      "pointsFor1": 30,
-      "Answer2": "Plastic",
-      "pointsFor2": 27,
-      "Answer3": "Blonde Hair",
-      "pointsFor3": 15,
-      "Answer4": "Measurements",
-      "pointsFor4": 10,
-      "Answer5": "Spelling Errors",
-      "pointsFor5": 9
-    },
-    {
       "Question": "Name Something A Customer Might Do To Annoy A Waitress.",
       "Answer1": "Send Food Back",
       "pointsFor1": 40,
@@ -15071,19 +15012,6 @@
       "pointsFor4": 5,
       "Answer5": "Spill Drinks",
       "pointsFor5": 4
-    },
-    {
-      "Question": "Where Might A Man Take You On A First Date That Would Keep Him From Getting A Second Date?",
-      "Answer1": "Bar",
-      "pointsFor1": 33,
-      "Answer2": "Strip Club",
-      "pointsFor2": 28,
-      "Answer3": "Fast Food resteraunt",
-      "pointsFor3": 17,
-      "Answer4": "Zoo",
-      "pointsFor4": 12,
-      "Answer5": "Sports Game",
-      "pointsFor5": 5
     },
     {
       "Question": "Tell Me An Excuse You’d Use To Avoid Singing At A Karaoke Club.",
@@ -16269,19 +16197,6 @@
       "pointsFor5": 3
     },
     {
-      "Question": "If A Woman Had A Mid-Life Crisis, What Might She Do?",
-      "Answer1": "Buy New Car",
-      "pointsFor1": 45,
-      "Answer2": "Have An Affair",
-      "pointsFor2": 21,
-      "Answer3": "Plastic Surgery",
-      "pointsFor3": 17,
-      "Answer4": "Shopping Spree",
-      "pointsFor4": 8,
-      "Answer5": "Cut/Dye Hair",
-      "pointsFor5": 8
-    },
-    {
       "Question": "Name A Place Where It Would Be Strange To Go If You Didn’t Have Kids.",
       "Answer1": "Park/ Playground",
       "pointsFor1": 33,
@@ -16618,19 +16533,6 @@
       "pointsFor4": 8,
       "Answer5": "Autograph",
       "pointsFor5": 4
-    },
-    {
-      "Question": "If You Lived In Soap Opera Land, Name Something That Would Happen A Lot More Often.",
-      "Answer1": "Drama/ Fights",
-      "pointsFor1": 25,
-      "Answer2": "Suspicious Deaths",
-      "pointsFor2": 20,
-      "Answer3": "Love Affairs",
-      "pointsFor3": 20,
-      "Answer4": "Romance/ Weddings",
-      "pointsFor4": 12,
-      "Answer5": "Break Ups/ Divorce",
-      "pointsFor5": 10
     },
     {
       "Question": "Name Something Runners Do Right After They Finish A Marathon.",
@@ -17491,19 +17393,6 @@
       "pointsFor5": 4
     },
     {
-      "Question": "Who Would A Bride Not Want To Show Up Unannounced At Her Wedding?",
-      "Answer1": "Ex",
-      "pointsFor1": 33,
-      "Answer2": "Enemy",
-      "pointsFor2": 22,
-      "Answer3": "Boss",
-      "pointsFor3": 16,
-      "Answer4": "Affair",
-      "pointsFor4": 12,
-      "Answer5": "Cops",
-      "pointsFor5": 4
-    },
-    {
       "Question": "Name A Specific Task Restaurant Staff Does For You, That You’d Be Surprised To Get Charged Extra For",
       "Answer1": "Bring Water",
       "pointsFor1": 51,
@@ -17580,19 +17469,6 @@
       "pointsFor4": 7,
       "Answer5": "Hangover",
       "pointsFor5": 6
-    },
-    {
-      "Question": "Name Something A Lot Of Movie Stars Have More Than One Of",
-      "Answer1": "Cars",
-      "pointsFor1": 65,
-      "Answer2": "Houses",
-      "pointsFor2": 12,
-      "Answer3": "Spouses",
-      "pointsFor3": 11,
-      "Answer4": "Affairs",
-      "pointsFor4": 5,
-      "Answer5": "Kids",
-      "pointsFor5": 4
     },
     {
       "Question": "Name Something Kids Are Afraid To Get From Their Teacher",
@@ -18557,19 +18433,6 @@
       "pointsFor5": 3
     },
     {
-      "Question": "Name A Game That Would Be Inappropriate At A Company Party.",
-      "Answer1": "Spin The Bottle",
-      "pointsFor1": 41,
-      "Answer2": "Strip Poker",
-      "pointsFor2": 32,
-      "Answer3": "Twister",
-      "pointsFor3": 11,
-      "Answer4": "Truth Or Dare",
-      "pointsFor4": 11,
-      "Answer5": "Beer Pong",
-      "pointsFor5": 3
-    },
-    {
       "Question": "Name something you might be “on top of”.",
       "Answer1": "The World",
       "pointsFor1": 33,
@@ -18791,19 +18654,6 @@
       "pointsFor5": 4
     },
     {
-      "Question": "Name A Famous Animal From A Comic Strip.",
-      "Answer1": "Garfield",
-      "pointsFor1": 33,
-      "Answer2": "Snoopy",
-      "pointsFor2": 29,
-      "Answer3": "Marmaduke",
-      "pointsFor3": 13,
-      "Answer4": "Heathcliff",
-      "pointsFor4": 11,
-      "Answer5": "Hobbes",
-      "pointsFor5": 11
-    },
-    {
       "Question": "Name A Type Of Business In Which You Might Have To Work Over THe Holidays.",
       "Answer1": "Retail",
       "pointsFor1": 33,
@@ -18919,19 +18769,6 @@
       "pointsFor4": 15,
       "Answer5": "Pants",
       "pointsFor5": 8
-    },
-    {
-      "Question": "What Might Someone Leave Out Of A Personals Ad, That Would Make You Think They Were Hiding Something?",
-      "Answer1": "Age",
-      "pointsFor1": 44,
-      "Answer2": "Weight",
-      "pointsFor2": 36,
-      "Answer3": "Marital Status",
-      "pointsFor3": 6,
-      "Answer4": "Gender",
-      "pointsFor4": 6,
-      "Answer5": "Photo",
-      "pointsFor5": 5
     },
     {
       "Question": "Name Something A Pro Athlete Might Do To Prepare For A Game.",
@@ -19244,19 +19081,6 @@
       "pointsFor4": 12,
       "Answer5": "Gills",
       "pointsFor5": 8
-    },
-    {
-      "Question": "Name something men try to cover up.",
-      "Answer1": "Affair",
-      "pointsFor1": 59,
-      "Answer2": "Baldness",
-      "pointsFor2": 15,
-      "Answer3": "Lies",
-      "pointsFor3": 8,
-      "Answer4": "Bills/Money",
-      "pointsFor4": 8,
-      "Answer5": "Gray hair",
-      "pointsFor5": 4
     },
     {
       "Question": "What body part is most important for a star to maintain?",
@@ -19946,19 +19770,6 @@
       "pointsFor4": 5,
       "Answer5": "Honey",
       "pointsFor5": 5
-    },
-    {
-      "Question": "Name A Piece Of Information You’d Include In A Personals Ad But Not On A Resume.",
-      "Answer1": "Age",
-      "pointsFor1": 57,
-      "Answer2": "Height",
-      "pointsFor2": 13,
-      "Answer3": "Marital Status",
-      "pointsFor3": 12,
-      "Answer4": "Weight",
-      "pointsFor4": 11,
-      "Answer5": "Horoscope Sign",
-      "pointsFor5": 4
     },
     {
       "Question": "Name Something Specific That People Flip",
@@ -25503,21 +25314,6 @@
       "pointsFor6": 3
     },
     {
-      "Question": "What Might A Rock Star Do At A Concert Hall That prevents Him Form Getting Hired Again",
-      "Answer1": "Trash The Place",
-      "pointsFor1": 30,
-      "Answer2": "Drink To Much",
-      "pointsFor2": 28,
-      "Answer3": "Swear",
-      "pointsFor3": 18,
-      "Answer4": "Strip",
-      "pointsFor4": 6,
-      "Answer5": "Not Show Up",
-      "pointsFor5": 5,
-      "Answer6": "Start A Fire",
-      "pointsFor6": 4
-    },
-    {
       "Question": "Name Something You Should Never Wear As The Guest At Someone’s Wedding",
       "Answer1": "White Dress",
       "pointsFor1": 28,
@@ -30768,21 +30564,6 @@
       "pointsFor6": 4
     },
     {
-      "Question": "Name A Comic Strip You See In Almost Every Newspaper.",
-      "Answer1": "Peanuts",
-      "pointsFor1": 40,
-      "Answer2": "Doonsbury",
-      "pointsFor2": 13,
-      "Answer3": "Garfield",
-      "pointsFor3": 13,
-      "Answer4": "Blondie",
-      "pointsFor4": 12,
-      "Answer5": "Boondocks",
-      "pointsFor5": 9,
-      "Answer6": "Beetle Bailey",
-      "pointsFor6": 7
-    },
-    {
       "Question": "Name Something People Do To Cure An Aching Back.",
       "Answer1": "Pain Reliever",
       "pointsFor1": 26,
@@ -31233,21 +31014,6 @@
       "pointsFor6": 3
     },
     {
-      "Question": "Name Something You Were Afraid To Do For The First Time.",
-      "Answer1": "Drive",
-      "pointsFor1": 42,
-      "Answer2": "Kiss/Intimacy",
-      "pointsFor2": 27,
-      "Answer3": "Swim",
-      "pointsFor3": 11,
-      "Answer4": "Ride A Bike",
-      "pointsFor4": 6,
-      "Answer5": "Go To School",
-      "pointsFor5": 5,
-      "Answer6": "Get On A Plane",
-      "pointsFor6": 4
-    },
-    {
       "Question": "Besides Jewelry, Name Something A Person Might Wear Around Their Neck.",
       "Answer1": "Scarf",
       "pointsFor1": 40,
@@ -31305,21 +31071,6 @@
       "Answer5": "Saxophone4Guitar",
       "pointsFor5": 3,
       "Answer6": "Guitar",
-      "pointsFor6": 3
-    },
-    {
-      "Question": "Name Something You’d Buy If You Wanted To Dress Up Like Fidel Castro",
-      "Answer1": "Military Uniform",
-      "pointsFor1": 30,
-      "Answer2": "Beard",
-      "pointsFor2": 25,
-      "Answer3": "Cigar",
-      "pointsFor3": 23,
-      "Answer4": "Hat",
-      "pointsFor4": 9,
-      "Answer5": "Bandana",
-      "pointsFor5": 4,
-      "Answer6": "Gun",
       "pointsFor6": 3
     },
     {
@@ -32055,21 +31806,6 @@
       "Answer5": "Rubber Ducky",
       "pointsFor5": 8,
       "Answer6": "Razor",
-      "pointsFor6": 3
-    },
-    {
-      "Question": "If A Movie Was Really Terrible, Name Something You Might Do In The Theater To Pass The Time.",
-      "Answer1": "Sleep",
-      "pointsFor1": 38,
-      "Answer2": "Play On Phone",
-      "pointsFor2": 24,
-      "Answer3": "Visit Snackbar",
-      "pointsFor3": 19,
-      "Answer4": "Whisper",
-      "pointsFor4": 9,
-      "Answer5": "Kiss",
-      "pointsFor5": 5,
-      "Answer6": "Read",
       "pointsFor6": 3
     },
     {
@@ -32913,21 +32649,6 @@
       "pointsFor6": 4
     },
     {
-      "Question": "Name A Profession Where An Engaged Woman Might Remove Her Extravagant Ring Before Work.",
-      "Answer1": "Cook/Baker",
-      "pointsFor1": 29,
-      "Answer2": "Doctor",
-      "pointsFor2": 25,
-      "Answer3": "Exotic Dancer",
-      "pointsFor3": 13,
-      "Answer4": "Hair Stylist",
-      "pointsFor4": 11,
-      "Answer5": "Actor/Model",
-      "pointsFor5": 11,
-      "Answer6": "Dishwasher",
-      "pointsFor6": 8
-    },
-    {
       "Question": "Name A Specific Smell From A Diner In The Morning That Makes You Want To Go In",
       "Answer1": "Bacon",
       "pointsFor1": 45,
@@ -32988,21 +32709,6 @@
       "pointsFor6": 2
     },
     {
-      "Question": "Name Another Word For Kiss",
-      "Answer1": "Smooch",
-      "pointsFor1": 44,
-      "Answer2": "Peck",
-      "pointsFor2": 32,
-      "Answer3": "Smack",
-      "pointsFor3": 8,
-      "Answer4": "Lip Lock",
-      "pointsFor4": 6,
-      "Answer5": "Sugar",
-      "pointsFor5": 3,
-      "Answer6": "French",
-      "pointsFor6": 3
-    },
-    {
       "Question": "Name A Household Appliance You Would Actually Enjoy Receiving As A Gift.",
       "Answer1": "Blender",
       "pointsFor1": 24,
@@ -33061,21 +32767,6 @@
       "pointsFor5": 8,
       "Answer6": "Heat",
       "pointsFor6": 5
-    },
-    {
-      "Question": "What Might You See In A Personals Ad That Would Make You Think It Was Placed By Superman?",
-      "Answer1": "Can Fly",
-      "pointsFor1": 38,
-      "Answer2": "Wears Cape",
-      "pointsFor2": 26,
-      "Answer3": "No Kryptonite",
-      "pointsFor3": 14,
-      "Answer4": "Has Xray Vision",
-      "pointsFor4": 8,
-      "Answer5": "Strong",
-      "pointsFor5": 6,
-      "Answer6": "Hero",
-      "pointsFor6": 4
     },
     {
       "Question": "Name A Vehicle That Has A Loud Engine",
@@ -33993,21 +33684,6 @@
       "pointsFor6": 6
     },
     {
-      "Question": "Name Something You’d Be Nervous To Do As An Actress For Fear That You’d Wind Up On A Tabloid.",
-      "Answer1": "Kiss Your Date",
-      "pointsFor1": 25,
-      "Answer2": "Drugs/Drinking",
-      "pointsFor2": 21,
-      "Answer3": "Pose Nude",
-      "pointsFor3": 18,
-      "Answer4": "Get Arrested",
-      "pointsFor4": 16,
-      "Answer5": "Cheat/Divorce",
-      "pointsFor5": 10,
-      "Answer6": "Eat Fast Food",
-      "pointsFor6": 5
-    },
-    {
       "Question": "Name Something That People Are Bound To Do In Las Vegas",
       "Answer1": "Gamble",
       "pointsFor1": 61,
@@ -34036,21 +33712,6 @@
       "pointsFor5": 9,
       "Answer6": "Eggs",
       "pointsFor6": 4
-    },
-    {
-      "Question": "Name Something People Do In An Engagement Photo, That They Don’t Do In A Mug Shot.",
-      "Answer1": "Smile",
-      "pointsFor1": 50,
-      "Answer2": "Kiss",
-      "pointsFor2": 32,
-      "Answer3": "Pose",
-      "pointsFor3": 5,
-      "Answer4": "Hold Hands",
-      "pointsFor4": 3,
-      "Answer5": "Dress Up",
-      "pointsFor5": 3,
-      "Answer6": "Embrace",
-      "pointsFor6": 3
     },
     {
       "Question": "Name Something A Teenager Has A Lot Of.",
@@ -34638,21 +34299,6 @@
       "pointsFor6": 4
     },
     {
-      "Question": "Name A Reason You Might Take Your Child Out Of A Movie.",
-      "Answer1": "Bad Language",
-      "pointsFor1": 31,
-      "Answer2": "Crying During Movie",
-      "pointsFor2": 17,
-      "Answer3": "Violence",
-      "pointsFor3": 16,
-      "Answer4": "Sex Scene",
-      "pointsFor4": 14,
-      "Answer5": "Talking",
-      "pointsFor5": 7,
-      "Answer6": "Got Sick",
-      "pointsFor6": 7
-    },
-    {
       "Question": "What Kinds Of Things Might People Lie About At Their High School Reunions?",
       "Answer1": "Job",
       "pointsFor1": 59,
@@ -34728,21 +34374,6 @@
       "pointsFor6": 3
     },
     {
-      "Question": "Which Extra Piece Of Clothing Might Wear To A Game Of Strip Poker To Delay Taking Off Your Essentials?",
-      "Answer1": "Socks/Stockings",
-      "pointsFor1": 27,
-      "Answer2": "Under Shirt/T Shirt",
-      "pointsFor2": 23,
-      "Answer3": "Jacket",
-      "pointsFor3": 21,
-      "Answer4": "Scarf",
-      "pointsFor4": 8,
-      "Answer5": "Thermals",
-      "pointsFor5": 7,
-      "Answer6": "Hat",
-      "pointsFor6": 4
-    },
-    {
       "Question": "Name Something People Think Rich Folks Do All Day Instead Of Working.",
       "Answer1": "Shop",
       "pointsFor1": 33,
@@ -34770,21 +34401,6 @@
       "Answer5": "Clogs",
       "pointsFor5": 4,
       "Answer6": "Heels",
-      "pointsFor6": 3
-    },
-    {
-      "Question": "Name A Piece Of Information That Post People List In Their Personal’s Ads.",
-      "Answer1": "Age",
-      "pointsFor1": 46,
-      "Answer2": "Name",
-      "pointsFor2": 22,
-      "Answer3": "Phone Number",
-      "pointsFor3": 10,
-      "Answer4": "Sex",
-      "pointsFor4": 9,
-      "Answer5": "Status",
-      "pointsFor5": 4,
-      "Answer6": "Height",
       "pointsFor6": 3
     },
     {
@@ -34861,21 +34477,6 @@
       "pointsFor5": 11,
       "Answer6": "Home Telephone",
       "pointsFor6": 6
-    },
-    {
-      "Question": "If There Were Prizes For Good Boyfriends, What Categories Would They Be Rated On?",
-      "Answer1": "Appearance",
-      "pointsFor1": 29,
-      "Answer2": "Kissing Ability",
-      "pointsFor2": 25,
-      "Answer3": "Romance",
-      "pointsFor3": 18,
-      "Answer4": "Kind Personality",
-      "pointsFor4": 10,
-      "Answer5": "Communication",
-      "pointsFor5": 9,
-      "Answer6": "Honesty",
-      "pointsFor6": 7
     },
     {
       "Question": "Name Something That Needs To Be Fed.",
@@ -34964,7 +34565,7 @@
       "pointsFor4": 11,
       "Answer5": "Gift card",
       "pointsFor5": 8,
-      "Answer6": "Hugs/Kiss",
+      "Answer6": "Hugs",
       "pointsFor6": 8
     },
     {
@@ -35265,21 +34866,6 @@
       "Answer5": "Landing",
       "pointsFor5": 3,
       "Answer6": "Late Passenger",
-      "pointsFor6": 3
-    },
-    {
-      "Question": "We Asked 100 Married People: What Do You Do With Your Spouse That Reminds You Why You Fell In Love?",
-      "Answer1": "Kiss/Sex",
-      "pointsFor1": 40,
-      "Answer2": "Go On Dates",
-      "pointsFor2": 22,
-      "Answer3": "Snuggle",
-      "pointsFor3": 15,
-      "Answer4": "Dance",
-      "pointsFor4": 14,
-      "Answer5": "Talk",
-      "pointsFor5": 3,
-      "Answer6": "Laugh",
       "pointsFor6": 3
     },
     {
@@ -36226,21 +35812,6 @@
       "pointsFor5": 13,
       "Answer6": "Parent",
       "pointsFor6": 11
-    },
-    {
-      "Question": "Name Something That Might Break A Couple Up If They Disagreed About It",
-      "Answer1": "Finances",
-      "pointsFor1": 44,
-      "Answer2": "Having Kids",
-      "pointsFor2": 31,
-      "Answer3": "Showing Affection",
-      "pointsFor3": 8,
-      "Answer4": "religion",
-      "pointsFor4": 6,
-      "Answer5": "Fidelity",
-      "pointsFor5": 5,
-      "Answer6": "Parenting",
-      "pointsFor6": 4
     },
     {
       "Question": "Name A Way A Student Finds Out It Is A Snow Day.",
@@ -38118,21 +37689,6 @@
       "pointsFor6": 4
     },
     {
-      "Question": "If You Were Going To Fill In For James Bond, Name Something You’d Have To Learn How To Do.",
-      "Answer1": "Drive Fast",
-      "pointsFor1": 30,
-      "Answer2": "Shoot",
-      "pointsFor2": 26,
-      "Answer3": "Fight",
-      "pointsFor3": 20,
-      "Answer4": "Save The World",
-      "pointsFor4": 6,
-      "Answer5": "Kiss Well",
-      "pointsFor5": 6,
-      "Answer6": "Use Gadgets",
-      "pointsFor6": 6
-    },
-    {
       "Question": "Name Something A Telemarketer Tries To Sell You",
       "Answer1": "Phone Service",
       "pointsFor1": 45,
@@ -39888,21 +39444,6 @@
       "pointsFor6": 3
     },
     {
-      "Question": "What Food Do You Want To Avoid Before Kissing Someone?",
-      "Answer1": "Garlic Bread",
-      "pointsFor1": 29,
-      "Answer2": "Pizza",
-      "pointsFor2": 24,
-      "Answer3": "Tuna",
-      "pointsFor3": 22,
-      "Answer4": "Onion Rings",
-      "pointsFor4": 13,
-      "Answer5": "Eggs",
-      "pointsFor5": 6,
-      "Answer6": "Chili",
-      "pointsFor6": 4
-    },
-    {
       "Question": "Name Something That Goes Well With Pizza.",
       "Answer1": "Beer",
       "pointsFor1": 36,
@@ -40653,21 +40194,6 @@
       "pointsFor6": 3
     },
     {
-      "Question": "We Asked 100 Men: Where Do Women Just Hate To Go?",
-      "Answer1": "Sport Events",
-      "pointsFor1": 47,
-      "Answer2": "Bar",
-      "pointsFor2": 14,
-      "Answer3": "Work",
-      "pointsFor3": 12,
-      "Answer4": "Supermarket",
-      "pointsFor4": 12,
-      "Answer5": "Strip Club",
-      "pointsFor5": 4,
-      "Answer6": "Doctor/Dentist",
-      "pointsFor6": 4
-    },
-    {
       "Question": "If Water Became As Expensive As Gas, Name Something You’d Do A Lot Less Of",
       "Answer1": "Shower",
       "pointsFor1": 31,
@@ -40755,21 +40281,6 @@
       "Answer5": "Money",
       "pointsFor5": 9,
       "Answer6": "Jacket",
-      "pointsFor6": 2
-    },
-    {
-      "Question": "Name Something People Enjoy Doing Under A Tree.",
-      "Answer1": "Picnic",
-      "pointsFor1": 46,
-      "Answer2": "Sleeping",
-      "pointsFor2": 19,
-      "Answer3": "Reading A Book",
-      "pointsFor3": 17,
-      "Answer4": "Sitting",
-      "pointsFor4": 6,
-      "Answer5": "Relaxing",
-      "pointsFor5": 6,
-      "Answer6": "Kissing",
       "pointsFor6": 2
     },
     {
@@ -41317,23 +40828,6 @@
       "pointsFor7": 7
     },
     {
-      "Question": "Something You’D Hate For Your Date To Be Allergic To",
-      "Answer1": "Flowers",
-      "pointsFor1": 26,
-      "Answer2": "Perfume/Cologne",
-      "pointsFor2": 22,
-      "Answer3": "Me",
-      "pointsFor3": 10,
-      "Answer4": "Dinner",
-      "pointsFor4": 10,
-      "Answer5": "Chocolates",
-      "pointsFor5": 10,
-      "Answer6": "Kissing",
-      "pointsFor6": 5,
-      "Answer7": "Alcohol",
-      "pointsFor7": 4
-    },
-    {
       "Question": "Name Something That Makes An Otherwise Average Person Seem Very Atrractive",
       "Answer1": "Make Up",
       "pointsFor1": 26,
@@ -41638,23 +41132,6 @@
       "pointsFor6": 8,
       "Answer7": "Bird",
       "pointsFor7": 5
-    },
-    {
-      "Question": "Name Something That Can Go Wrong During A First Kiss With Someone",
-      "Answer1": "Bad Breath",
-      "pointsFor1": 35,
-      "Answer2": "Miss Their Mouth",
-      "pointsFor2": 16,
-      "Answer3": "Bump Nose/ Head",
-      "pointsFor3": 12,
-      "Answer4": "Cough",
-      "pointsFor4": 8,
-      "Answer5": "Sneeze",
-      "pointsFor5": 8,
-      "Answer6": "Burp",
-      "pointsFor6": 8,
-      "Answer7": "Bite Up",
-      "pointsFor7": 7
     },
     {
       "Question": "Name Something That People Use Less In The Summer Than In The Winter",
@@ -42388,23 +41865,6 @@
       "pointsFor7": 3
     },
     {
-      "Question": "Name A Halloween Costume Adults Wear To Look Sexy.",
-      "Answer1": "Nurse",
-      "pointsFor1": 34,
-      "Answer2": "Maid",
-      "pointsFor2": 21,
-      "Answer3": "Devil",
-      "pointsFor3": 17,
-      "Answer4": "Cat",
-      "pointsFor4": 11,
-      "Answer5": "Witch",
-      "pointsFor5": 9,
-      "Answer6": "Vampire",
-      "pointsFor6": 4,
-      "Answer7": "Cop",
-      "pointsFor7": 3
-    },
-    {
       "Question": "If There Was A School For Beauty Queens, Name A Skill That Would Be Taught There.",
       "Answer1": "Pageant Walk",
       "pointsFor1": 30,
@@ -42507,23 +41967,6 @@
       "pointsFor7": 7
     },
     {
-      "Question": "Name Something Specific Your Partner Did Early In Your Relationship That You Wish They Still Did Now?",
-      "Answer1": "Kiss",
-      "pointsFor1": 27,
-      "Answer2": "Open Doors",
-      "pointsFor2": 23,
-      "Answer3": "Buy Flowers",
-      "pointsFor3": 19,
-      "Answer4": "Hug",
-      "pointsFor4": 7,
-      "Answer5": "Hold Hands",
-      "pointsFor5": 5,
-      "Answer6": "Cook",
-      "pointsFor6": 4,
-      "Answer7": "Cuddle",
-      "pointsFor7": 4
-    },
-    {
       "Question": "Name Something A Woman Might Complain That Her Husband Never Wants To Do",
       "Answer1": "Go Out",
       "pointsFor1": 24,
@@ -42539,23 +41982,6 @@
       "pointsFor6": 5,
       "Answer7": "Cuddle",
       "pointsFor7": 5
-    },
-    {
-      "Question": "What Word Would You Use To Describe A Very Attractive Person",
-      "Answer1": "Hot",
-      "pointsFor1": 28,
-      "Answer2": "Beautiful",
-      "pointsFor2": 24,
-      "Answer3": "Sexy",
-      "pointsFor3": 17,
-      "Answer4": "Pretty",
-      "pointsFor4": 6,
-      "Answer5": "Gorgeous",
-      "pointsFor5": 5,
-      "Answer6": "Handsome",
-      "pointsFor6": 4,
-      "Answer7": "Cute",
-      "pointsFor7": 4
     },
     {
       "Question": "Name Something About Rapunzel’S Hair She Might’Ve Worried About",
@@ -42607,40 +42033,6 @@
       "pointsFor6": 12,
       "Answer7": "Deer",
       "pointsFor7": 10
-    },
-    {
-      "Question": "Name Something You Should Always Keep Secret, Even From Your Partner.",
-      "Answer1": "Weight",
-      "pointsFor1": 35,
-      "Answer2": "Affairs",
-      "pointsFor2": 25,
-      "Answer3": "Dating History",
-      "pointsFor3": 12,
-      "Answer4": "Spending",
-      "pointsFor4": 12,
-      "Answer5": "Real Age",
-      "pointsFor5": 5,
-      "Answer6": "Passwords",
-      "pointsFor6": 4,
-      "Answer7": "Diary",
-      "pointsFor7": 4
-    },
-    {
-      "Question": "Name One Word That You Always See On The Covers Of Celebrity Magazines",
-      "Answer1": "Divorce",
-      "pointsFor1": 20,
-      "Answer2": "Sex/ Affair",
-      "pointsFor2": 17,
-      "Answer3": "Star",
-      "pointsFor3": 17,
-      "Answer4": "Scandal",
-      "pointsFor4": 16,
-      "Answer5": "Hot",
-      "pointsFor5": 11,
-      "Answer6": "Pregnant",
-      "pointsFor6": 8,
-      "Answer7": "Diet/ Weight",
-      "pointsFor7": 8
     },
     {
       "Question": "Tell Me Something You Over-Did As A Teenager, That You Can Laugh About Today.",
@@ -43187,23 +42579,6 @@
       "pointsFor7": 6
     },
     {
-      "Question": "Name An Expression That Begins With The Word â€œFirstâ€",
-      "Answer1": "First Come 1St Served",
-      "pointsFor1": 26,
-      "Answer2": "First Love",
-      "pointsFor2": 18,
-      "Answer3": "First Class",
-      "pointsFor3": 10,
-      "Answer4": "First Things First",
-      "pointsFor4": 10,
-      "Answer5": "First Time",
-      "pointsFor5": 10,
-      "Answer6": "First Kiss",
-      "pointsFor6": 10,
-      "Answer7": "First Base",
-      "pointsFor7": 10
-    },
-    {
       "Question": "Name Something That Spies In Movies Always Carry",
       "Answer1": "Weapon",
       "pointsFor1": 34,
@@ -43748,23 +43123,6 @@
       "pointsFor7": 8
     },
     {
-      "Question": "Name A Place Where A Woman Would Hate For Her Husband To be When She Went Into Labor",
-      "Answer1": "At The Bar",
-      "pointsFor1": 38,
-      "Answer2": "At Work",
-      "pointsFor2": 28,
-      "Answer3": "Out Of Town",
-      "pointsFor3": 11,
-      "Answer4": "At A Strip Club",
-      "pointsFor4": 9,
-      "Answer5": "Stuck In A Traffic",
-      "pointsFor5": 6,
-      "Answer6": "In An Airplane",
-      "pointsFor6": 4,
-      "Answer7": "In Jail",
-      "pointsFor7": 3
-    },
-    {
       "Question": "Name A Place Where Wish People Wouldn’t Answer Their Cell Phones",
       "Answer1": "Movie Theater",
       "pointsFor1": 27,
@@ -43816,23 +43174,6 @@
       "pointsFor7": 3
     },
     {
-      "Question": "Name Something Two People On A Date Might Share",
-      "Answer1": "Kiss",
-      "pointsFor1": 33,
-      "Answer2": "Drink",
-      "pointsFor2": 24,
-      "Answer3": "Food",
-      "pointsFor3": 20,
-      "Answer4": "Bill",
-      "pointsFor4": 9,
-      "Answer5": "Conversation",
-      "pointsFor5": 5,
-      "Answer6": "Car",
-      "pointsFor6": 3,
-      "Answer7": "Interests",
-      "pointsFor7": 3
-    },
-    {
       "Question": "Besides Alcohol, Drugs, Or Tobacco, Name Something That People Get Addicted To.",
       "Answer1": "Love",
       "pointsFor1": 24,
@@ -43864,23 +43205,6 @@
       "Answer6": "Phone",
       "pointsFor6": 4,
       "Answer7": "Ipod",
-      "pointsFor7": 3
-    },
-    {
-      "Question": "Name An Accent That Many Americans Consider Sexy",
-      "Answer1": "French",
-      "pointsFor1": 34,
-      "Answer2": "Italian",
-      "pointsFor2": 20,
-      "Answer3": "Spanish",
-      "pointsFor3": 17,
-      "Answer4": "British",
-      "pointsFor4": 17,
-      "Answer5": "Southern",
-      "pointsFor5": 4,
-      "Answer6": "Australian",
-      "pointsFor6": 3,
-      "Answer7": "Irish",
       "pointsFor7": 3
     },
     {
@@ -46077,23 +45401,6 @@
       "pointsFor7": 3
     },
     {
-      "Question": "What Might A Date Do In The First 5 Minutes That Tells You They Have Bad Manners?",
-      "Answer1": "Burp",
-      "pointsFor1": 40,
-      "Answer2": "Leave",
-      "pointsFor2": 15,
-      "Answer3": "Spit",
-      "pointsFor3": 14,
-      "Answer4": "Try To Kiss You",
-      "pointsFor4": 11,
-      "Answer5": "Swear",
-      "pointsFor5": 7,
-      "Answer6": "Not Open Door",
-      "pointsFor6": 7,
-      "Answer7": "Talk On Phone",
-      "pointsFor7": 3
-    },
-    {
       "Question": "If Adults Had Fight Like Toddlers Do, What Might Your Spouse Do The Next Time You Disagreed?",
       "Answer1": "Cry",
       "pointsFor1": 30,
@@ -47573,23 +46880,6 @@
       "pointsFor7": 3
     },
     {
-      "Question": "Name Something Or Someone You’d See At A nightclub",
-      "Answer1": "PEOPLE",
-      "pointsFor1": 19,
-      "Answer2": "BARTENDER",
-      "pointsFor2": 14,
-      "Answer3": "LIGHTS",
-      "pointsFor3": 12,
-      "Answer4": "DRINKS",
-      "pointsFor4": 9,
-      "Answer5": "DJ",
-      "pointsFor5": 8,
-      "Answer6": "BAND",
-      "pointsFor6": 5,
-      "Answer7": "DANCERS",
-      "pointsFor7": 5
-    },
-    {
       "Question": "Name Something A Person Might Reach For At The Dinner Table",
       "Answer1": "Salt And Pepper",
       "pointsFor1": 43,
@@ -48202,23 +47492,6 @@
       "pointsFor7": 7
     },
     {
-      "Question": "Besides White Christmas, Name A Song On Big Crosby’s White Christmas Album.",
-      "Answer1": "Jingle Bells",
-      "pointsFor1": 40,
-      "Answer2": "Silent Night",
-      "pointsFor2": 31,
-      "Answer3": "Silver Bells",
-      "pointsFor3": 15,
-      "Answer4": "I’ll Be Home For Xmas",
-      "pointsFor4": 5,
-      "Answer5": "Santa Coming To Town",
-      "pointsFor5": 2,
-      "Answer6": "Beginning To Look A",
-      "pointsFor6": 2,
-      "Answer7": "Adeste Fideles",
-      "pointsFor7": 2
-    },
-    {
       "Question": "Besides On The Job, Name Another Life Situation Where You’ve Wished You Had Earplugs.",
       "Answer1": "Concert",
       "pointsFor1": 21,
@@ -48319,23 +47592,6 @@
       "pointsFor6": 2,
       "Answer7": "Gatorade",
       "pointsFor7": 2
-    },
-    {
-      "Question": "Name A Person You Wouldn’t Kiss Under The Mistletoe.",
-      "Answer1": "Sibling",
-      "pointsFor1": 29,
-      "Answer2": "Parent",
-      "pointsFor2": 26,
-      "Answer3": "In Law",
-      "pointsFor3": 11,
-      "Answer4": "Santa",
-      "pointsFor4": 8,
-      "Answer5": "Exercise",
-      "pointsFor5": 6,
-      "Answer6": "Boss",
-      "pointsFor6": 6,
-      "Answer7": "Grandparent",
-      "pointsFor7": 6
     },
     {
       "Question": "Name Something Hawaii Is Known For.",
@@ -49067,23 +48323,6 @@
       "pointsFor6": 6,
       "Answer7": "Coffee Shop",
       "pointsFor7": 3
-    },
-    {
-      "Question": "Name Something You Wish People Wouldn’t Do In An Elevator.",
-      "Answer1": "Smoke",
-      "pointsFor1": 34,
-      "Answer2": "Pass Gas",
-      "pointsFor2": 22,
-      "Answer3": "Sneeze",
-      "pointsFor3": 12,
-      "Answer4": "Talk",
-      "pointsFor4": 8,
-      "Answer5": "Kiss",
-      "pointsFor5": 7,
-      "Answer6": "Stand Too Close",
-      "pointsFor6": 4,
-      "Answer7": "Cough",
-      "pointsFor7": 4
     },
     {
       "Question": "Name An Actor Or Actress Who Commands A High Salary To Be In A Film.",
@@ -50053,23 +49292,6 @@
       "pointsFor6": 6,
       "Answer7": "Jump The Gun",
       "pointsFor7": 4
-    },
-    {
-      "Question": "Tell Me Something A Cab Driver Gets Sick Of His Passengers Doing.",
-      "Answer1": "Talking",
-      "pointsFor1": 43,
-      "Answer2": "No Tip",
-      "pointsFor2": 24,
-      "Answer3": "Giving Orders",
-      "pointsFor3": "9+",
-      "Answer4": "Eating",
-      "pointsFor4": 7,
-      "Answer5": "Drunk/Sick",
-      "pointsFor5": 6,
-      "Answer6": "Kissing",
-      "pointsFor6": 4,
-      "Answer7": "Leaving Things",
-      "pointsFor7": 3
     },
     {
       "Question": "Name A Shakespeare Play Which Was Made Into A Movie",
@@ -53521,23 +52743,6 @@
       "pointsFor6": 7,
       "Answer7": "shop",
       "pointsFor7": 5
-    },
-    {
-      "Question": "Name Something That People Might Be Seen Doing In Their Vehicles As A Rest Area Along The Freeway",
-      "Answer1": "Sleeping",
-      "pointsFor1": 38,
-      "Answer2": "Eating/Drinking",
-      "pointsFor2": 17,
-      "Answer3": "Kissing",
-      "pointsFor3": 14,
-      "Answer4": "Use Phone",
-      "pointsFor4": 11,
-      "Answer5": "freshening Up",
-      "pointsFor5": 8,
-      "Answer6": "Reading Map",
-      "pointsFor6": 4,
-      "Answer7": "Smoking",
-      "pointsFor7": 3
     },
     {
       "Question": "Which Movie Should Only Be Watched On A Giant Screen?",

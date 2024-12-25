@@ -67,12 +67,6 @@ span {
   color: red;
 }
 
-.tutorial img {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 
 @media only screen and (min-width: 1000px) {
@@ -110,9 +104,22 @@ span {
   .tutorial button {
     font-size: 1.5rem;
   }
+}
 
+@media only screen and (min-width: 391px) and (max-width: 440px) {
+  .tutorial h1 {
+    font-size: 2.5rem;
+  }
 
-  .tutorial img {
-    width: 80%;
+  .tutorial h2 {
+    font-size: 1.5rem;
+  }
+
+  .tutorial h3 {
+    font-size: 1.7rem;
+  }
+
+  .tutorial button {
+    font-size: 2rem;
   }
 }
