@@ -297,15 +297,6 @@
       "pointsFor3": 4
     },
     {
-      "Question": "We Asked 100 Wives: Name A Place Where You Wouldn’t Want Your Husband To Go With His Buddies.",
-      "Answer1": "Gentleman’s Club",
-      "pointsFor1": 65,
-      "Answer2": "The Bar",
-      "pointsFor2": 31,
-      "Answer3": "Las Vegas",
-      "pointsFor3": 3
-    },
-    {
       "Question": "Name A Crime That Some People Probably Commit Every Day.",
       "Answer1": "Speeding",
       "pointsFor1": 62,
@@ -1370,17 +1361,6 @@
       "pointsFor3": 13,
       "Answer4": "Childcare Provider",
       "pointsFor4": 12
-    },
-    {
-      "Question": "Name A Place You Visit Where You Aren’t Allowed To Touch Anything.",
-      "Answer1": "Museum/Gallery",
-      "pointsFor1": 68,
-      "Answer2": "Zoo",
-      "pointsFor2": 20,
-      "Answer3": "Gentleman’s Club",
-      "pointsFor3": 5,
-      "Answer4": "China Shop",
-      "pointsFor4": 5
     },
     {
       "Question": "We Asked 100 Women: Name A Gift That You’d Always Be Happy To Get From Your Partner.",
@@ -7972,17 +7952,6 @@
       "pointsFor4": 3
     },
     {
-      "Question": "Name A Place Where A Man Might Be A “Regular Customer.”",
-      "Answer1": "Bar",
-      "pointsFor1": 40,
-      "Answer2": "Restaurant/Coffee Shop",
-      "pointsFor2": 21,
-      "Answer3": "Barber Shop",
-      "pointsFor3": 21,
-      "Answer4": "Gentleman’s Club",
-      "pointsFor4": 16
-    },
-    {
       "Question": "Name Someone Who You’d Hate To Accidentally Forward A Personal Email To",
       "Answer1": "Boss",
       "pointsFor1": 59,
@@ -11919,19 +11888,6 @@
       "pointsFor5": 5
     },
     {
-      "Question": "What Accent Might An American Pretend To Have In Order To Sound Sexier",
-      "Answer1": "French",
-      "pointsFor1": 61,
-      "Answer2": "British",
-      "pointsFor2": 18,
-      "Answer3": "Italian",
-      "pointsFor3": 8,
-      "Answer4": "Spanish",
-      "pointsFor4": 8,
-      "Answer5": "Australian",
-      "pointsFor5": 3
-    },
-    {
       "Question": "Name A Reason Why A Kid Might Not Trick-Or-Treat",
       "Answer1": "Scared",
       "pointsFor1": 46,
@@ -12866,19 +12822,6 @@
       "pointsFor4": 9,
       "Answer5": "Deer/Animal In The Road",
       "pointsFor5": 7
-    },
-    {
-      "Question": "Name A Celebrity Who’s So Handsome He Could Make A Santa Suit Look Sexy.",
-      "Answer1": "Brad Pitt",
-      "pointsFor1": 63,
-      "Answer2": "George Clooney",
-      "pointsFor2": 20,
-      "Answer3": "Tom Cruise",
-      "pointsFor3": 6,
-      "Answer4": "Will Smith",
-      "pointsFor4": 5,
-      "Answer5": "Denzel Washington",
-      "pointsFor5": 3
     },
     {
       "Question": "For What Occasion Did Your Partner Last Look Stunning?",
@@ -14688,19 +14631,6 @@
       "pointsFor5": 3
     },
     {
-      "Question": "Name A Job That A Man May Have That Makes Him A Sex Symbol Even Into Old Age",
-      "Answer1": "Actor",
-      "pointsFor1": 39,
-      "Answer2": "Model",
-      "pointsFor2": 23,
-      "Answer3": "Dancer",
-      "pointsFor3": 16,
-      "Answer4": "Firefighter",
-      "pointsFor4": 4,
-      "Answer5": "President",
-      "pointsFor5": 6
-    },
-    {
       "Question": "Name A Salty Food That’s Hard To Stop Eating Once You Start.",
       "Answer1": "Potato Chips",
       "pointsFor1": 46,
@@ -15310,19 +15240,6 @@
       "pointsFor4": 8,
       "Answer5": "Suspenders",
       "pointsFor5": 7
-    },
-    {
-      "Question": "Name A Sports Uniform That Many Men Look Sexy in.",
-      "Answer1": "Baseball",
-      "pointsFor1": 33,
-      "Answer2": "Football",
-      "pointsFor2": 30,
-      "Answer3": "Soccer",
-      "pointsFor3": 11,
-      "Answer4": "Basketball",
-      "pointsFor4": 8,
-      "Answer5": "Swimwear",
-      "pointsFor5": 6
     },
     {
       "Question": "Which Circus Or Sideshow Performer Had Better Have A Good Insurance Policy?",
@@ -17689,19 +17606,6 @@
       "pointsFor4": 6,
       "Answer5": "Letter Sent Home",
       "pointsFor5": 6
-    },
-    {
-      "Question": "Name One Word You’d See On The Cover Of A Women’s Magazine, But Probably Not On A Magazine For Men",
-      "Answer1": "Sexy/Hot",
-      "pointsFor1": 33,
-      "Answer2": "Makeup",
-      "pointsFor2": 25,
-      "Answer3": "Diet",
-      "pointsFor3": 24,
-      "Answer4": "Fashion",
-      "pointsFor4": 8,
-      "Answer5": "Love",
-      "pointsFor5": 7
     },
     {
       "Question": "Name Something People Use To Smell Good, But You Wouldn’t Use To Eliminate You Dog’s Odor",
@@ -24123,19 +24027,6 @@
       "Answer4": "Secret Santa",
       "pointsFor4": 14,
       "Answer5": "Secret Garden",
-      "pointsFor5": 7
-    },
-    {
-      "Question": "Name An Occupation Where Women Are Often Portrayed As Sexy?",
-      "Answer1": "Nurse",
-      "pointsFor1": 33,
-      "Answer2": "Dancer",
-      "pointsFor2": 25,
-      "Answer3": "Model",
-      "pointsFor3": 17,
-      "Answer4": "Waitress",
-      "pointsFor4": 13,
-      "Answer5": "Secretary",
       "pointsFor5": 7
     },
     {
@@ -41832,23 +41723,6 @@
       "pointsFor6": 8,
       "Answer7": "Body Odor",
       "pointsFor7": 7
-    },
-    {
-      "Question": "Name A Type Of Club",
-      "Answer1": "Golf Club",
-      "pointsFor1": 50,
-      "Answer2": "Night Club",
-      "pointsFor2": 22,
-      "Answer3": "Gentleman’s Club",
-      "pointsFor3": 8,
-      "Answer4": "Club Sandwich",
-      "pointsFor4": 5,
-      "Answer5": "Billy Club",
-      "pointsFor5": 5,
-      "Answer6": "Country Club",
-      "pointsFor6": 4,
-      "Answer7": "Book Club",
-      "pointsFor7": 3
     },
     {
       "Question": "Name A Country Known For Having Beautiful Weather.",
