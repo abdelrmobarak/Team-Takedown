@@ -66,6 +66,15 @@ padding: 1em;
 span {
   color: red;
 }
+
+.tutorial img {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 @media only screen and (min-width: 1000px) {
   .tutorial .players, .tutorial .hosts, .tutorial .displays {
     margin-top: 7rem;
@@ -102,4 +111,8 @@ span {
     font-size: 1.5rem;
   }
 
+
+  .tutorial img {
+    width: 80%;
+  }
 }
