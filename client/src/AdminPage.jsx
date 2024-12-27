@@ -15,6 +15,8 @@ function AdminPage(props) {
         btn6: false,
         btn7: false
     })
+
+
     
     var question = props.questions[questionNumber].Question
     var answer1 = props.questions[questionNumber].Answer1

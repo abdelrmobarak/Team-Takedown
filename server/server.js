@@ -14,7 +14,7 @@ const io = new Server(httpServer,{
 })
 
 
-
+// socket functions used in the client side
 io.on('connection', socket => {
     console.log(`${socket.id} has connected`)
     socket.on('message', data =>{

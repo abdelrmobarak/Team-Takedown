@@ -16,7 +16,10 @@ function DisplayPageTwo(props) {
         },[])
 
     return(
+        <>
         <h1 className='waiting'>Waiting For Host...</h1>
+        <p className='roomid'>{props.roomID}</p>
+        </>
     )
 }
 

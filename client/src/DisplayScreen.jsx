@@ -9,6 +9,7 @@ function DisplayScreen(props) {
     const [bluepoints, setBluePoints] = useState(0)
     const [totalpoints, setTotalPoints] = useState(0)
     const [hidden, setHidden] = useState('hidden')
+    const [round, setRound] = useState(0)
 
 
     const [answer1, setAnswer1] = useState('1')
@@ -83,8 +84,21 @@ function DisplayScreen(props) {
         setAnswer6(' 6 ')
         setAnswer7(' 7 ')
         setTotalPoints(0)
+        setRound(round + 1)
     })
 
+    useEffect(() => {
+        console.log(round)
+        if(round > 5){
+            if (redpoints > bluepoints){
+                props.setWinner('red')
+            }else if (bluepoints > redpoints){  
+            props.setWinner('blue')
+            }
+            props.setShowWinner(true)
+            props.setShowDisplayScreen(false)
+    }
+    },[round])
 
     return(
         <div className='displayscreen'>

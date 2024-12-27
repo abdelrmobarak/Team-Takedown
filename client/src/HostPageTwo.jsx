@@ -6,6 +6,7 @@ function HostPageTwo(props) {
 
     const [teamBlue, setTeamBlue] = useState([]);
     const [teamRed, setTeamRed] = useState([]);
+    const [isDisplay, setIsDisplay] = useState(false);
 
     function onHomepageClick() {
         props.setShowHomepage(true);
@@ -14,9 +15,15 @@ function HostPageTwo(props) {
 
     function onStartClick(e) {
         e.preventDefault();
+        if(isDisplay){
         props.setShowHostTwo(false);
         props.setShowAdminPage(true);
         socket.emit('game-start-server', props.gameCode);
+        }
+        else{
+            alert('please connect a display')
+        }
+        
     }
 
     function generateGameCode() {
@@ -42,6 +49,8 @@ function HostPageTwo(props) {
                 } else if (team === 'blue') {
                     props.setTeamBlue((prevTeamBlue) => [...prevTeamBlue, username]);
                     setTeamBlue((prevTeamBlue) => [...prevTeamBlue, username]); // repeat locally for immediate update
+                }else if(team === 'display'){
+                    setIsDisplay(true);
                 }
                 console.log(`${username} has connected to ${roomid} and is on team ${team}`);
             }

@@ -39,6 +39,7 @@ function Index() {
   const [teamBlue, setTeamBlue] = useState([])
   const [showTutorialScreen, setShowTutorialScreen] = useState(false)
   const [showWinner, setShowWinner] = useState(false)
+  const [winner,setWinner] = useState('')
 
   
  
@@ -69,7 +70,9 @@ function Index() {
     setTeamBlue,
     questions,
     setShowTutorialScreen,
-    setShowWinner
+    setShowWinner,
+    winner,
+    setWinner
   }
 
 
