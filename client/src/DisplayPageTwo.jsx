@@ -1,9 +1,11 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import {socket} from './Homepage'
 import './Waiting.css'
 
 function DisplayPageTwo(props) {
+    const [teamBlue, setTeamBlue] = useState([]);
+    const [teamRed, setTeamRed] = useState([]);
 
     useEffect(()=>{ 
             socket.on('game-start',(gameCode)=>{
@@ -13,11 +15,31 @@ function DisplayPageTwo(props) {
                     props.setShowDisplayScreen(true)
                 }
             })
+
+            socket.on('update-display-list', (teamRed, teamBlue) =>{
+                setTeamRed(teamRed)
+                setTeamBlue(teamBlue)
+                console.log(`'updating display list' ${teamRed} ${teamBlue}`) //debugging
+            })
         },[])
 
     return(
         <>
         <h1 className='waiting'>Waiting For Host...</h1>
+        <div className='teams-container'>
+                <div className='red'>
+                    <h2>TEAM <span className="redred">RED:</span></h2>
+                    {teamRed.map((name, index) => {
+                        return <p key={index} id='names'>{name}</p>
+                    })}
+                </div>
+                <div className='blue'>
+                    <h2>TEAM <span className="blueblue">BLUE:</span></h2>
+                    {teamBlue.map((name, index) => {
+                        return <p key={index} id='names'>{name}</p>
+                    })}
+                </div>
+            </div>
         <p className='roomid'>{props.roomID}</p>
         </>
     )

@@ -60,17 +60,20 @@ function HostPageTwo(props) {
 
 
     useEffect(() => {
+        var isGood = true
         socket.on('check-room', (roomid, id, username, team) => {
             console.log(`chcecking: ${username}`)
             if(team === 'red' && teamRed.length > 5 || team === 'blue' && teamBlue.length > 5){
                 socket.emit('kick-server', roomid, id, username)
                 if(team === 'red'){
-                props.setTeamRed(teamRed.slice(0,-1))
-                setTeamRed(teamRed.slice(0,-1))
-            }else if(team === 'blue'){ 
-                props.setTeamBlue(teamBlue.splice(0,-1))
-                setTeamBlue(teamBlue.slice(0,-1))
-            }
+                    props.setTeamRed(teamRed.slice(0,-1))
+                    setTeamRed(teamRed.slice(0,-1))
+                    isGood = false
+                }else if(team === 'blue'){ 
+                    props.setTeamBlue(teamBlue.splice(0,-1))
+                    setTeamBlue(teamBlue.slice(0,-1))
+                    isGood = false
+                }
 
             }
 
@@ -79,11 +82,17 @@ function HostPageTwo(props) {
                 if(team === 'red'){
                     props.setTeamRed(teamRed.slice(0,-1))
                     setTeamRed(teamRed.slice(0,-1))
+                    isGood = false
             }
             else if(team === 'blue'){
                 props.setTeamBlue(teamBlue.slice(0,-1))
                 setTeamBlue(teamBlue.slice(0,-1))
-            }
+                isGood = false
+            }   
+        }
+
+        if(isGood){
+            socket.emit('update-display-list-server', props.gameCode, teamRed, teamBlue)
         }
         })
     },[teamRed, teamBlue])

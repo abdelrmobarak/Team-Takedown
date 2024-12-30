@@ -5,13 +5,47 @@
     align-items: center;
     height: 100%; 
     font-size: 5vw; 
-    margin-top: 40vh;
+    margin-top: 2vh;
 }
 @media only screen and (max-width: 500px) {
     .waiting {
         transform: translateY(0vh); 
         font-size: 3em; 
 }}
+
+
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#names {
+    font-family: 'roboto', sans-serif;
+}
+
+.red, .blue {
+    color: #000000;
+    font-family: "Lilita One", serif;
+    text-align: center;
+    font-size: 1em;
+}
+
+.red {
+    margin-left: 3em;
+}
+
+.blue {
+    text-align: center; 
+    margin-right: 3em;
+}
+
+.blueblue {
+    color: blue;
+}
+
+.redred {
+    color: red
+}
 
 .roomid {
     position: absolute;
@@ -27,3 +61,17 @@
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+@media only screen and (max-width: 390px) {
+    .hostpage h1 {
+        font-size: 2em;
+    }
+
+    .hostpage #start {
+        font-size: 1em;
+    }
+
+    .red, .blue {
+        font-size: 0.8em;
+    }
+  }

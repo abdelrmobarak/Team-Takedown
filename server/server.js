@@ -73,6 +73,10 @@ io.on('connection', socket => {
     socket.on('show-wrong-answer-server', (gameCode) =>{
         io.to(gameCode).emit('show-wrong-answer')
     })
+    
+    socket.on('update-display-list-server', (gameCode, teamRed, teamBlue) =>{
+        io.to(gameCode).emit('update-display-list', teamRed, teamBlue)
+    })
 })
 
 httpServer.listen(port, ()=> {

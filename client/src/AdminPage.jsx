@@ -15,7 +15,7 @@ function AdminPage(props) {
         btn6: false,
         btn7: false
     })
-
+    const [isPointsAssigned, setIsPointsAssigned] = useState(false)
 
     
     var question = props.questions[questionNumber].Question
@@ -38,7 +38,9 @@ function AdminPage(props) {
         props.questions[questionNumber].pointsFor7 || 0 ]
 
     function update(e) {
+        setWhoPressed(' - ')
         e.preventDefault()
+        if(isPointsAssigned){
         e.target.disabled
         setQuestionNumber(Math.floor(Math.random() * props.questions.length))
         question = props.questions[questionNumber].Question
@@ -65,6 +67,10 @@ function AdminPage(props) {
         updateItem("btn5", false);
         updateItem("btn6", false);
         updateItem("btn7", false);
+        }
+        else{
+            alert("Please assign points to a team before moving to the next question")
+        }
     }
 
     function shuffleArray(array) {
@@ -122,6 +128,7 @@ function AdminPage(props) {
         };
 
     function pointsUpdate(e) {
+        setWhoPressed(' - ')
         e.preventDefault()
         switch (e.target.id) {
             case "one":
@@ -155,6 +162,7 @@ function AdminPage(props) {
     }
 
     function givePoints(e){
+        setIsPointsAssigned(true)
         e.preventDefault()
         if (e.target.id == "red"){
             socket.emit('give-points-server', props.gameCode,'red', points)
