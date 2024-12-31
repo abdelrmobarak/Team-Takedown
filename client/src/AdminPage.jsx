@@ -47,6 +47,10 @@ function AdminPage(props) {
         answer1 = props.questions[questionNumber].Answer1
         answer2 = props.questions[questionNumber].Answer2
         answer3 = props.questions[questionNumber].Answer3
+        answer4 = props.questions[questionNumber].Answer4 || " "
+        answer5 = props.questions[questionNumber].Answer5 || " "
+        answer6 = props.questions[questionNumber].Answer6 || " "
+        answer7 = props.questions[questionNumber].Answer7 || " "
         pointsForQuestions = 
         [
         props.questions[questionNumber].pointsFor1,
@@ -71,6 +75,40 @@ function AdminPage(props) {
         else{
             alert("Please assign points to a team before moving to the next question")
         }
+    }
+
+    function skipQuestion(e){
+        e.preventDefault()
+        setQuestionNumber(Math.floor(Math.random() * props.questions.length))
+        question = props.questions[questionNumber].Question
+        answer1 = props.questions[questionNumber].Answer1
+        answer2 = props.questions[questionNumber].Answer2
+        answer3 = props.questions[questionNumber].Answer3
+        answer4 = props.questions[questionNumber].Answer4 || " "
+        answer5 = props.questions[questionNumber].Answer5 || " "
+        answer6 = props.questions[questionNumber].Answer6 || " "
+        answer7 = props.questions[questionNumber].Answer7 || " "
+        pointsForQuestions = 
+        [
+        props.questions[questionNumber].pointsFor1,
+        props.questions[questionNumber].pointsFor2,
+        props.questions[questionNumber].pointsFor3,
+        props.questions[questionNumber].pointsFor4 || 0,
+        props.questions[questionNumber].pointsFor5 || 0,
+        props.questions[questionNumber].pointsFor6 || 0,
+        props.questions[questionNumber].pointsFor7 || 0 
+    ]
+        updateItem("btn1", false);
+        updateItem("btn2", false);
+        updateItem("btn3", false);
+        updateItem("btn4", false);
+        updateItem("btn5", false);
+        updateItem("btn6", false);
+        updateItem("btn7", false);
+
+        socket.emit('skip-question-server', props.gameCode)
+
+        
     }
 
     function shuffleArray(array) {
@@ -186,6 +224,7 @@ function AdminPage(props) {
             <button id="five" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn5}>{answer5}</button>
             <button id="six" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn6}>{answer6}</button>
             <button id="seven" onClick={(e) => pointsUpdate(e)} disabled = {isDisabled.btn7}>{answer7}</button>
+            <button id="skip" onClick={(e)=>skipQuestion(e)}>Skip Question</button>
         </div>
         <div className = "qna">
             <h1>{question}</h1>

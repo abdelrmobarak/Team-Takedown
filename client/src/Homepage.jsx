@@ -1,6 +1,7 @@
 import React from 'react';
 import './Homepage.css';
 import io from 'socket.io-client';
+import logo from './assets/logo.png';
 
 export const socket = io.connect("https://team-takedown.onrender.com");
 
@@ -32,7 +33,7 @@ function Homepage(props) {
     <div className='homepage'>
       <h1>TEAM TAKEDOWN</h1>
       <div className='logo-container'>
-        <img className='logo' src='./assets/ttssquare1.png' alt='Team Takedown Logo' />
+        <img className='logo' src={logo} alt='Team Takedown Logo' />
       </div>
       <div className='button-container'>
         <button className="Display" onClick={()=> onDisplayClick()}>

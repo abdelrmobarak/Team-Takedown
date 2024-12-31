@@ -89,13 +89,25 @@ function DisplayScreen(props) {
         setRound(round + 1)
     })
 
+    socket.on('skip-question', () => {
+        setTotalPoints(0)   
+        setAnswer1(' 1 ')
+        setAnswer2(' 2 ')
+        setAnswer3(' 3 ')
+        setAnswer4(' 4 ')
+        setAnswer5(' 5 ')
+        setAnswer6(' 6 ')
+        setAnswer7(' 7 ')
+        setTotalPoints(0)
+    })
+
     useEffect(() => {
         console.log(round)
         if(round > 5){
             if (redpoints > bluepoints){
                 props.setWinner('red')
             }else if (bluepoints > redpoints){  
-            props.setWinner('blue')
+                props.setWinner('blue')
             }
             props.setShowWinner(true)
             props.setShowDisplayScreen(false)

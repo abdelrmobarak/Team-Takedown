@@ -29,10 +29,14 @@ function PlayerPage(props) {
         })
 
         socket.on('close-buttons', (name) =>{
-            if(name != props.username){
+            if(name != props.username && currentIndex === 0){
                 setIsButtonDisabled(true)
                 setText('Ah, you missed your chance :(')
             }
+        })
+
+        socket.on('skip-question', () =>{
+            textSetter(currentIndex)
         })
 
     useEffect(() => {

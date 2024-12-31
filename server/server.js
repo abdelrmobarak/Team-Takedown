@@ -77,6 +77,10 @@ io.on('connection', socket => {
     socket.on('update-display-list-server', (gameCode, teamRed, teamBlue) =>{
         io.to(gameCode).emit('update-display-list', teamRed, teamBlue)
     })
+
+    socket.on('skip-question-server', (gameCode) =>{
+        io.to(gameCode).emit('skip-question')
+    })
 })
 
 httpServer.listen(port, ()=> {
