@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import {socket} from './Homepage'
 import './Waiting.css'
-import waiting from './assets/waiting2.mp3'
+import waiting from './assets/waiting.mp3'
 import BackgroundMusic from './BackgroundMusic'
 
 function DisplayPageTwo(props) {
