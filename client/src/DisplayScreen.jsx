@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import {socket} from './Homepage'
 import './DisplayScreen.css'
+import BackgroundMusic from './BackgroundMusic'
+import displayMusic from './assets/display.mp3'
 
 
 function DisplayScreen(props) {
@@ -122,6 +124,7 @@ function DisplayScreen(props) {
         <h1 id='five'>{answer5}</h1>
         <h1 id='six'>{answer6}</h1>
         <h1 id='seven'>{answer7}</h1>
+        <BackgroundMusic src={displayMusic} />
         </div>
         <div className={hidden} id='cointainer-x'>
             <div className="red-x"></div>

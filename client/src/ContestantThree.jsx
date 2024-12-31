@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { socket } from './Homepage'
 import './Waiting.css'
+import waiting from './assets/waiting2.mp3'
+import BackgroundMusic from './BackgroundMusic'
+
 
 function ContestantThree(props) {
 
@@ -25,10 +28,10 @@ function ContestantThree(props) {
     },[])
     
     return(
-
         <>
+        
         <h1 className='waiting'>Waiting For Host...</h1>
-        <p className='roomid'>{props.roomID}</p>
+        <p className='roomid'><BackgroundMusic src={waiting} />{props.roomID}</p>
         </>
     )
 }

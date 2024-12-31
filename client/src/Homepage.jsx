@@ -2,7 +2,7 @@ import React from 'react';
 import './Homepage.css';
 import io from 'socket.io-client';
 
-export const socket = io.connect("localhost:3001");
+export const socket = io.connect("https://team-takedown.onrender.com");
 
 
 function Homepage(props) {

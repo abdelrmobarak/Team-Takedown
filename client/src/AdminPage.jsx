@@ -100,7 +100,7 @@ function AdminPage(props) {
         })
         
         socket.on('button-pressed', (team, name) =>{
-            setWhoPressed(name)
+            setWhoPressed(`${name} from ${team}`)
             console.log(`${name} from ${team} has pressed the button`)
         })
     })
@@ -128,7 +128,6 @@ function AdminPage(props) {
         };
 
     function pointsUpdate(e) {
-        setWhoPressed(' - ')
         e.preventDefault()
         switch (e.target.id) {
             case "one":

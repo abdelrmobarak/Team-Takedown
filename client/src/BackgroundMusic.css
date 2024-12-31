@@ -1,0 +1,29 @@
+.background-music {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .mute-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .mute-button.muted {
+    background-color: #f44336; /* Red for muted */
+    color: white;
+  }
+  
+  .mute-button.unmuted {
+    background-color: #4caf50; /* Green for unmuted */
+    color: white;
+  }
+  
+  .mute-button:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  

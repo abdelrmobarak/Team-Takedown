@@ -2,6 +2,8 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import {socket} from './Homepage'
 import './Waiting.css'
+import waiting from './assets/waiting2.mp3'
+import BackgroundMusic from './BackgroundMusic'
 
 function DisplayPageTwo(props) {
     const [teamBlue, setTeamBlue] = useState([]);
@@ -40,7 +42,7 @@ function DisplayPageTwo(props) {
                     })}
                 </div>
             </div>
-        <p className='roomid'>{props.roomID}</p>
+        <p className='roomid'> <BackgroundMusic src={waiting}/>{props.roomID}</p>
         </>
     )
 }
