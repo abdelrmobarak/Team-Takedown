@@ -78,6 +78,7 @@ function AdminPage(props) {
     }
 
     function skipQuestion(e){
+        setWhoPressed(' - ')
         e.preventDefault()
         setQuestionNumber(Math.floor(Math.random() * props.questions.length))
         question = props.questions[questionNumber].Question

@@ -57,7 +57,7 @@ io.on('connection', socket => {
     })
 
     socket.on('button-pressed-server', (roomID, team, name) =>{
-        io.to(roomID).emit('close-buttons', name)
+        io.to(roomID).emit('close-buttons', name, team)
         io.to(roomID).emit('button-pressed', team, name)
     })
     
